@@ -1,213 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>JSC-Frames-Portfolio</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <img src="assets/img/logo.png" alt="JSC-Frames" width="100" height="50" />
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-                </div>
+    <title>JSC-Frames-Portfolio</title>
+</head>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <img src="assets/img/logo.png" alt="JSC-Frames" width="100" height="50" />
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi, I am a<br><span class="home__title-color">Photographer</span></h1>
-
-                    <a href="mailto:Jaferchikhly01@gmail.com" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <!-- <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a> -->
-                    <a href="https://www.instagram.com/jscframes?igsh=ZTl6OXM5d2Rvb3Zr" target="_blank" class="home__social-icon"><i class='bx bxl-instagram'></i></a>   
-                    <!-- <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a> -->
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.png" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Jafer Chikhly</h2>
-                        <p class="about__text">A skilled photographer and videographer based in Kuwait with two years of experience, capturing stunning visuals for weddings, events, and lifestyle shoots, blending technical expertise with artistic vision.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Professional Skills</h2>
-                        <p class="skills__text">Skilled in photography, videography, editing, lighting, composition, and colour correction.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-camera skills__icon'></i>
-                                <span class="skills__name">Photography</span>
-                            </div>
-                            <div class="skills__bar skills__photography">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-camera-movie skills__icon'></i>
-                                <span class="skills__name">Videography</span>
-                            </div>
-                            <div class="skills__bar skills__videography">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-videos skills__icon' ></i>
-                                <span class="skills__name">Video Editing</span>
-                            </div>
-                            <div class="skills__bar skills__ve">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">35%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-pen skills__icon' ></i>
-                                <span class="skills__name">Colour Grading</span>
-                            </div>
-                            <div class="skills__bar skills__cg">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <!-- 1 -->
-                    <a href="https://lh3.googleusercontent.com/drive-viewer/AKGpihb5oVfu_TZhWwCHP7VOzZURR6OQbCMuGr_Pi4XQtQJvc-78AJS3xHV06jQYep4cJxBQSXcjTJslJda499hrMugoWraaDzsmM70=s1600-rw-v1?source=screenshot.guru">
-                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihb5oVfu_TZhWwCHP7VOzZURR6OQbCMuGr_Pi4XQtQJvc-78AJS3xHV06jQYep4cJxBQSXcjTJslJda499hrMugoWraaDzsmM70=s1600-rw-v1" class="work__img">
-                    </a>
-                    <!-- 2 -->
-                    <a href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYKhixwntPp-wG07B5357tOTnkBEBW2gpa-5OHxpQGSue535ReqJ0UJlO0lGaf8nlz_2xz7lKispIjdU15x0XzX7fmhtZ0dCM4=s1600-rw-v1?source=screenshot.guru">
-                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYKhixwntPp-wG07B5357tOTnkBEBW2gpa-5OHxpQGSue535ReqJ0UJlO0lGaf8nlz_2xz7lKispIjdU15x0XzX7fmhtZ0dCM4=s1600-rw-v1" class="work__img">
-                    </a>
-                    <!-- 3 -->
-                    <a href="https://lh3.googleusercontent.com/drive-viewer/AKGpihb1gxIk57N1RIvaBna4CcDvRgWenDUWjOAmSi7dNoKFDyLYbD7OU4gMmil9uz9NmRk6h-yj-zHVihiSN7vHjGcs7Lz2OSi40Q=s1600-rw-v1?source=screenshot.guru">
-                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihb1gxIk57N1RIvaBna4CcDvRgWenDUWjOAmSi7dNoKFDyLYbD7OU4gMmil9uz9NmRk6h-yj-zHVihiSN7vHjGcs7Lz2OSi40Q=s1600-rw-v1" class="work__img">
-                    </a>
-                    <!-- 4 -->
-                    <a href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbCFmxVe0l5D4z__XisffywvDHU6z-LnMaGWrki0WDrXZhjdJ-Z2gxA1ASB1to1qSpnXyW_-1Ig-8gDEFldOs-7FHUnzEySRP4=s1600-rw-v1?source=screenshot.guru">
-                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbCFmxVe0l5D4z__XisffywvDHU6z-LnMaGWrki0WDrXZhjdJ-Z2gxA1ASB1to1qSpnXyW_-1Ig-8gDEFldOs-7FHUnzEySRP4=s1600-rw-v1" class="work__img">
-                    </a>
-                    <!-- 5 -->
-                    <a href="https://lh3.googleusercontent.com/drive-viewer/AKGpiha2BVha4U08tu5hfCllDH3nbIKvjd68w9nyGaqQYkZX65wqRLT_ypMsFc1pwqJj22p_Q_3HFkK1QIT3COC8lL6s7cYKJLtAAQ=s1600-rw-v1?source=screenshot.guru">
-                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpiha2BVha4U08tu5hfCllDH3nbIKvjd68w9nyGaqQYkZX65wqRLT_ypMsFc1pwqJj22p_Q_3HFkK1QIT3COC8lL6s7cYKJLtAAQ=s1600-rw-v1" class="work__img">
-                    </a>
-                    <!-- 6 -->
-                    <a href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1?source=screenshot.guru">
-                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1" class="work__img">
-                    </a>
-                    
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Marlon</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
-        </footer>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi, I am a<br><span class="home__title-color">Photographer</span></h1>
+
+                <a href="mailto:Jaferchikhly01@gmail.com" class="button">Contact</a>
+            </div>
+
+            <div class="home__social">
+                <!-- <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a> -->
+                <a href="https://www.instagram.com/jscframes?igsh=ZTl6OXM5d2Rvb3Zr" target="_blank"
+                    class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                <!-- <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a> -->
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.png" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">I'am Jafer Chikhly</h2>
+                    <p class="about__text">A skilled photographer and videographer based in Kuwait with two years of
+                        experience, capturing stunning visuals for weddings, events, and lifestyle shoots, blending
+                        technical expertise with artistic vision.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Professional Skills</h2>
+                    <p class="skills__text">Skilled in photography, videography, editing, lighting, composition, and
+                        colour correction.</p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-camera skills__icon'></i>
+                            <span class="skills__name">Photography</span>
+                        </div>
+                        <div class="skills__bar skills__photography">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-camera-movie skills__icon'></i>
+                            <span class="skills__name">Videography</span>
+                        </div>
+                        <div class="skills__bar skills__videography">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">65%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-videos skills__icon'></i>
+                            <span class="skills__name">Video Editing</span>
+                        </div>
+                        <div class="skills__bar skills__ve">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">35%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-pen skills__icon'></i>
+                            <span class="skills__name">Colour Grading</span>
+                        </div>
+                        <div class="skills__bar skills__cg">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
+
+            <div class="work__container bd-grid">
+                <!-- 1 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihb5oVfu_TZhWwCHP7VOzZURR6OQbCMuGr_Pi4XQtQJvc-78AJS3xHV06jQYep4cJxBQSXcjTJslJda499hrMugoWraaDzsmM70=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihb5oVfu_TZhWwCHP7VOzZURR6OQbCMuGr_Pi4XQtQJvc-78AJS3xHV06jQYep4cJxBQSXcjTJslJda499hrMugoWraaDzsmM70=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 2 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYKhixwntPp-wG07B5357tOTnkBEBW2gpa-5OHxpQGSue535ReqJ0UJlO0lGaf8nlz_2xz7lKispIjdU15x0XzX7fmhtZ0dCM4=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYKhixwntPp-wG07B5357tOTnkBEBW2gpa-5OHxpQGSue535ReqJ0UJlO0lGaf8nlz_2xz7lKispIjdU15x0XzX7fmhtZ0dCM4=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 3 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihb1gxIk57N1RIvaBna4CcDvRgWenDUWjOAmSi7dNoKFDyLYbD7OU4gMmil9uz9NmRk6h-yj-zHVihiSN7vHjGcs7Lz2OSi40Q=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihb1gxIk57N1RIvaBna4CcDvRgWenDUWjOAmSi7dNoKFDyLYbD7OU4gMmil9uz9NmRk6h-yj-zHVihiSN7vHjGcs7Lz2OSi40Q=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 4 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbCFmxVe0l5D4z__XisffywvDHU6z-LnMaGWrki0WDrXZhjdJ-Z2gxA1ASB1to1qSpnXyW_-1Ig-8gDEFldOs-7FHUnzEySRP4=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbCFmxVe0l5D4z__XisffywvDHU6z-LnMaGWrki0WDrXZhjdJ-Z2gxA1ASB1to1qSpnXyW_-1Ig-8gDEFldOs-7FHUnzEySRP4=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 5 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpiha2BVha4U08tu5hfCllDH3nbIKvjd68w9nyGaqQYkZX65wqRLT_ypMsFc1pwqJj22p_Q_3HFkK1QIT3COC8lL6s7cYKJLtAAQ=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpiha2BVha4U08tu5hfCllDH3nbIKvjd68w9nyGaqQYkZX65wqRLT_ypMsFc1pwqJj22p_Q_3HFkK1QIT3COC8lL6s7cYKJLtAAQ=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 6 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 7 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYizPbCyIJHkYj8JVagyPsSlRndgz1b7A16EN_Q6PY9p5dDUH3woorMWyEOzn_0PN50-8ik1MaNw4NL-rijusL1t18a8UL4=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYizPbCyIJHkYj8JVagyPsSlRndgz1b7A16EN_Q6PY9p5dDUH3woorMWyEOzn_0PN50-8ik1MaNw4NL-rijusL1t18a8UL4=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 8 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbBYM3K7-oAFt6RwSH81PAEqDHYlEobiAwA4DJ3Er2yKrl_l3tTHtXzr-hiyPdhUFa66n7QF__IbO1Iixjc9jPKHoPraojsUN4=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbBYM3K7-oAFt6RwSH81PAEqDHYlEobiAwA4DJ3Er2yKrl_l3tTHtXzr-hiyPdhUFa66n7QF__IbO1Iixjc9jPKHoPraojsUN4=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 9 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZYneo__vcbNuZCxn20Bf0LK9gvUXWo4Feb7J74wkyv_Zh8ie0SvseUnS1sLcVqkXJkVxs8X0CuchmAGMPOU4gnujpI02EZSQ=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZYneo__vcbNuZCxn20Bf0LK9gvUXWo4Feb7J74wkyv_Zh8ie0SvseUnS1sLcVqkXJkVxs8X0CuchmAGMPOU4gnujpI02EZSQ=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 10 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYC0hqJwfFuFCYc2b5hKv-mKDFLh0XEdKovnqCWDEE1WKPdYsI3DnXo6PM6t__TnuGB1RWe2mCUl6_8ktTkyAjH4UuOOdOTQQ=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYC0hqJwfFuFCYc2b5hKv-mKDFLh0XEdKovnqCWDEE1WKPdYsI3DnXo6PM6t__TnuGB1RWe2mCUl6_8ktTkyAjH4UuOOdOTQQ=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 11 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbngPYjiU2MGeXj_tsCyaKoQiIHJsKnKh5Jr5fg2iP_uC2utKqU0omdehLZ5fYBInkyosKVg1vCMirwmN2K27aEzpG7ZLdgSh0=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbngPYjiU2MGeXj_tsCyaKoQiIHJsKnKh5Jr5fg2iP_uC2utKqU0omdehLZ5fYBInkyosKVg1vCMirwmN2K27aEzpG7ZLdgSh0=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 12 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihau2ZJlrcs5ok_ubCxbnuPk1Ut6PPnIvAMg0ogHcfgKZfBb_w6pnfZ1IzQTYvRCOYiYcZ357SBRZitgMKZRqLfrkijBDTjIPeQ=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihau2ZJlrcs5ok_ubCxbnuPk1Ut6PPnIvAMg0ogHcfgKZfBb_w6pnfZ1IzQTYvRCOYiYcZ357SBRZitgMKZRqLfrkijBDTjIPeQ=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 13 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZSvNz97PUhPQ3r-5QvWFQbFWkemkbQ-R7Wgd6hw-GKIA4mEzCeSWVnuyO0UANrIdzT_Na_jTZ0kIGljtKBmXLnMW_imn_xoiQ=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZSvNz97PUhPQ3r-5QvWFQbFWkemkbQ-R7Wgd6hw-GKIA4mEzCeSWVnuyO0UANrIdzT_Na_jTZ0kIGljtKBmXLnMW_imn_xoiQ=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 14 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYMYVotDQkylZ9VYdI1AZA1JTUQGlfxc1itAMSyWq2uoSg8efFhhjCpKJ7O3yn1CD264iscx1M57ExQvBUVqbeKIN6NCr_vkCQ=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYMYVotDQkylZ9VYdI1AZA1JTUQGlfxc1itAMSyWq2uoSg8efFhhjCpKJ7O3yn1CD264iscx1M57ExQvBUVqbeKIN6NCr_vkCQ=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 15 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ8CTpFcdwVEtehJmUufDAXB-eX-nKuJ9q14MQ4QO_e_bIL-VZF_z7hDWnSZy4dGNNvlw1exz8ioBOKt76WjWzNoLOXrsXQVw=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ8CTpFcdwVEtehJmUufDAXB-eX-nKuJ9q14MQ4QO_e_bIL-VZF_z7hDWnSZy4dGNNvlw1exz8ioBOKt76WjWzNoLOXrsXQVw=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 16 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbKCwL3oSsk5qjo0F-dGqiktH1N3V9SSPXCJrsCGSKk8EMUsnfLnMFI3eZ0R4aEBHwXAqI8Zs6V6Wok09RGrMLOpmJr5DwfGZ0=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbKCwL3oSsk5qjo0F-dGqiktH1N3V9SSPXCJrsCGSKk8EMUsnfLnMFI3eZ0R4aEBHwXAqI8Zs6V6Wok09RGrMLOpmJr5DwfGZ0=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 17 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ754BrC3axxVEdjLlC0GaDCwSqqw5nl9oAJDPpnZWzgM_TieyOF3f6KUo8NFJsy5VynNnsKwjf3gSjzr0DbB0fXK1gsg9Ob-g=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ754BrC3axxVEdjLlC0GaDCwSqqw5nl9oAJDPpnZWzgM_TieyOF3f6KUo8NFJsy5VynNnsKwjf3gSjzr0DbB0fXK1gsg9Ob-g=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 18 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZpqgch3QLfbEwsOsCCbda4pu2NyGGDypv7d2N_Qaju6rOzjqwhpfydYCwNadieGiS-ONKSikbqGp4pqoqxwdBVOl8Zsiql6qA=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZpqgch3QLfbEwsOsCCbda4pu2NyGGDypv7d2N_Qaju6rOzjqwhpfydYCwNadieGiS-ONKSikbqGp4pqoqxwdBVOl8Zsiql6qA=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 19 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYmyA797Awc_gIJqQrG4jNexNUqTnchz6NjYZSuQUy9NOjeN3XrGBkK8NF9mvvMMJaoXSm8p6KaY9Y1G2WF0oGvb-bjb8rk_eE=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYmyA797Awc_gIJqQrG4jNexNUqTnchz6NjYZSuQUy9NOjeN3XrGBkK8NF9mvvMMJaoXSm8p6KaY9Y1G2WF0oGvb-bjb8rk_eE=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 20 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZgEVgC3Q6kuIvat-yKD_3tuPliTM1-DGDR28eoVEzzR0uKowPDRNno6DyBvtScdhyd1FbSjQOb6csNAYLt4e-kqBj28huAl9M=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZgEVgC3Q6kuIvat-yKD_3tuPliTM1-DGDR28eoVEzzR0uKowPDRNno6DyBvtScdhyd1FbSjQOb6csNAYLt4e-kqBj28huAl9M=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 21 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbIVe00DUfVvReL9i1W6-LvHOFasQItKfFVz7uUdg6h6Ki7rnBd57jM7pl3l-avIjKIW4geQKTR1ZsfRp9_28Oir841n4C1uQ=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbIVe00DUfVvReL9i1W6-LvHOFasQItKfFVz7uUdg6h6Ki7rnBd57jM7pl3l-avIjKIW4geQKTR1ZsfRp9_28Oir841n4C1uQ=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 22 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbkBCtSeHXoeb9nnPtX2x7NXeUHiDU7dElvt5FrH-3WcPQd_NHmvwXQqO4NVapRIDDa2hk4nHt4nSnij8nGylvFfjuTtbYVWA=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbkBCtSeHXoeb9nnPtX2x7NXeUHiDU7dElvt5FrH-3WcPQd_NHmvwXQqO4NVapRIDDa2hk4nHt4nSnij8nGylvFfjuTtbYVWA=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 23 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZXewxLBolVgOeZoE6fgJOPUqr_hW74dG7cNFAl1I-909t505aXEZoEIGfzqHknH0As_pYKub4qPdjWXDdbQsGytEF1STcVGYU=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZXewxLBolVgOeZoE6fgJOPUqr_hW74dG7cNFAl1I-909t505aXEZoEIGfzqHknH0As_pYKub4qPdjWXDdbQsGytEF1STcVGYU=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 24 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihaH8Dp7a4Jl-QtYBP5h8gV1Pi3buvGUvDeYY_o2Ft3c6KmdJs-SmD45zQA7ZJPSXSKwah6F29FnyQAU3US0C4Xx2SNX7BEMCy4=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaH8Dp7a4Jl-QtYBP5h8gV1Pi3buvGUvDeYY_o2Ft3c6KmdJs-SmD45zQA7ZJPSXSKwah6F29FnyQAU3US0C4Xx2SNX7BEMCy4=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 25 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbZRtWBh7KFO0uQf829E65FfHoktVTkDOjU4WGZabvmf3iDqqYmAL5LBGwi7n0fbDGW_CzCtWCb5cYK-ISwRviBDZK4nnuif8k=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbZRtWBh7KFO0uQf829E65FfHoktVTkDOjU4WGZabvmf3iDqqYmAL5LBGwi7n0fbDGW_CzCtWCb5cYK-ISwRviBDZK4nnuif8k=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 26 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbjQLoJnepPPEm3gYL0UFopAm_zgwM-heQwlG8RMWXJthKd77BKiDudnSzKWbexhbGqTR2C6WEq3kdquZ5l6-FmdmteEowGcQ=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbjQLoJnepPPEm3gYL0UFopAm_zgwM-heQwlG8RMWXJthKd77BKiDudnSzKWbexhbGqTR2C6WEq3kdquZ5l6-FmdmteEowGcQ=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 27 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihb0j-OiAyPJkkh0oWh3TRp0f4JqKU_kRAlLcdKoomjUXooWzuHbrJu5b4HUfSsfV5JiyzYeH9QJV-bnIEV9SXAAZ1yOagHWALw=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihb0j-OiAyPJkkh0oWh3TRp0f4JqKU_kRAlLcdKoomjUXooWzuHbrJu5b4HUfSsfV5JiyzYeH9QJV-bnIEV9SXAAZ1yOagHWALw=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 28 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYS7TNOxT_n_S5nd94v3q4RzMfE6E6YrrIU1qOqaAlVFwPstknqHfyB-VIVEsMB27vCqJndQL6L7h5LRNJEC0e6d7q3Sza-yg=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYS7TNOxT_n_S5nd94v3q4RzMfE6E6YrrIU1qOqaAlVFwPstknqHfyB-VIVEsMB27vCqJndQL6L7h5LRNJEC0e6d7q3Sza-yg=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 29 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpiha5zNXPXPa0aGakGRXT4jueVNeWWgnBjUXCtnmFW3dG1dFoHVtAZf7SE64Uo-d1IUyhmqu5o5ntP8kKojiK6K6VHn8P0uyviw=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpiha5zNXPXPa0aGakGRXT4jueVNeWWgnBjUXCtnmFW3dG1dFoHVtAZf7SE64Uo-d1IUyhmqu5o5ntP8kKojiK6K6VHn8P0uyviw=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 30 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbOrasK8lc-YFpH02aS7fog9lSXkxt5udzZ4eZU9AtTTe__xr81IG4Xuaaw_aRDPQhDbXoUT55oS84kBxiYSDPtiI9ZqujONmQ=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbOrasK8lc-YFpH02aS7fog9lSXkxt5udzZ4eZU9AtTTe__xr81IG4Xuaaw_aRDPQhDbXoUT55oS84kBxiYSDPtiI9ZqujONmQ=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <!-- 31 -->
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZlOqQrZj6S45xbPAUc8HSFMNKjj0C-mH_68TDXRNEwpcQqVv8y_6lzxfJuRwMTttUJEl1KPwOuYEf9qw_Fhfre3g9CnFgvbuo=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZlOqQrZj6S45xbPAUc8HSFMNKjj0C-mH_68TDXRNEwpcQqVv8y_6lzxfJuRwMTttUJEl1KPwOuYEf9qw_Fhfre3g9CnFgvbuo=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1"
+                        class="work__img">
+                </a>
+                <a
+                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1?source=screenshot.guru">
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1"
+                        class="work__img">
+                </a>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="button" value="Submit" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">JSC-Frames-Porfolio</p>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p class="footer__copy">&#169; JSC-Frames.All Rights Reserved.</p>
+    </footer>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
