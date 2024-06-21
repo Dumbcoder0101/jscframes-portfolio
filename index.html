@@ -18,16 +18,26 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <img src="assets/img/logo.png" alt="JSC-Frames" width="100" height="50" />
+                <img src="assets/img/logo.png" alt="JSC-Frames" class="responsive-img" />
 
             </div>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
+            <div class="nav__menu" id="nav-menu" class="navbar">
+                <ul class="nav__list" class="nav-list">
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item dropdown">
+                        <a href="#" class="nav__link dropdown-toggle">Work</a>
+                        <ul class="dropdown-menu" class="nav__item">
+                            <li class="dropdown-item"  >
+                                <a href="#" class="nav__link">Food</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="nav__link">Nature</a>
+                            </li>
+                            <!-- Add more subcategories as needed -->
+                        </ul>
+                    </li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
@@ -43,14 +53,12 @@
         <section class="home bd-grid" id="home">
             <div class="home__data">
                 <h1 class="home__title">Hi, I am a<br><span class="home__title-color">Photographer</span></h1>
-
-                <a href="mailto:Jaferchikhly01@gmail.com" class="button">Contact</a>
             </div>
 
             <div class="home__social">
                 <!-- <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a> -->
-                <a href="https://www.instagram.com/jscframes?igsh=ZTl6OXM5d2Rvb3Zr" target="_blank"
-                    class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                <!-- <a href="https://www.instagram.com/jscframes?igsh=ZTl6OXM5d2Rvb3Zr" target="_blank"
+                    class="home__social-icon"><i class='bx bxl-instagram'></i></a> -->
                 <!-- <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a> -->
             </div>
 
@@ -67,6 +75,7 @@
                         <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png" />
                     </g>
                 </svg>
+                <!-- <a href="mailto:Jaferchikhly01@gmail.com" class="button">Contact</a> -->
             </div>
         </section>
 
@@ -80,7 +89,7 @@
                 </div>
 
                 <div>
-                    <h2 class="about__subtitle">I'am Jafer Chikhly</h2>
+                    <h2 class="about__subtitle">I am Jafer Chikhly</h2>
                     <p class="about__text">A skilled photographer and videographer based in Kuwait with two years of
                         experience, capturing stunning visuals for weddings, events, and lifestyle shoots, blending
                         technical expertise with artistic vision.</p>
@@ -89,7 +98,7 @@
         </section>
 
         <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
+        <!-- <section class="skills section" id="skills">
             <h2 class="section-title">Skills</h2>
 
             <div class="skills__container bd-grid">
@@ -151,214 +160,323 @@
                     <img src="assets/img/work3.jpg" alt="" class="skills__img">
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--===== WORK =====-->
         <section class="work section" id="work">
             <h2 class="section-title">Work</h2>
 
-            <div class="work__container bd-grid">
-                <!-- 1 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihb5oVfu_TZhWwCHP7VOzZURR6OQbCMuGr_Pi4XQtQJvc-78AJS3xHV06jQYep4cJxBQSXcjTJslJda499hrMugoWraaDzsmM70=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihb5oVfu_TZhWwCHP7VOzZURR6OQbCMuGr_Pi4XQtQJvc-78AJS3xHV06jQYep4cJxBQSXcjTJslJda499hrMugoWraaDzsmM70=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 2 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYKhixwntPp-wG07B5357tOTnkBEBW2gpa-5OHxpQGSue535ReqJ0UJlO0lGaf8nlz_2xz7lKispIjdU15x0XzX7fmhtZ0dCM4=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYKhixwntPp-wG07B5357tOTnkBEBW2gpa-5OHxpQGSue535ReqJ0UJlO0lGaf8nlz_2xz7lKispIjdU15x0XzX7fmhtZ0dCM4=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 3 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihb1gxIk57N1RIvaBna4CcDvRgWenDUWjOAmSi7dNoKFDyLYbD7OU4gMmil9uz9NmRk6h-yj-zHVihiSN7vHjGcs7Lz2OSi40Q=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihb1gxIk57N1RIvaBna4CcDvRgWenDUWjOAmSi7dNoKFDyLYbD7OU4gMmil9uz9NmRk6h-yj-zHVihiSN7vHjGcs7Lz2OSi40Q=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 4 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbCFmxVe0l5D4z__XisffywvDHU6z-LnMaGWrki0WDrXZhjdJ-Z2gxA1ASB1to1qSpnXyW_-1Ig-8gDEFldOs-7FHUnzEySRP4=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbCFmxVe0l5D4z__XisffywvDHU6z-LnMaGWrki0WDrXZhjdJ-Z2gxA1ASB1to1qSpnXyW_-1Ig-8gDEFldOs-7FHUnzEySRP4=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 5 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpiha2BVha4U08tu5hfCllDH3nbIKvjd68w9nyGaqQYkZX65wqRLT_ypMsFc1pwqJj22p_Q_3HFkK1QIT3COC8lL6s7cYKJLtAAQ=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpiha2BVha4U08tu5hfCllDH3nbIKvjd68w9nyGaqQYkZX65wqRLT_ypMsFc1pwqJj22p_Q_3HFkK1QIT3COC8lL6s7cYKJLtAAQ=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 6 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 7 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYizPbCyIJHkYj8JVagyPsSlRndgz1b7A16EN_Q6PY9p5dDUH3woorMWyEOzn_0PN50-8ik1MaNw4NL-rijusL1t18a8UL4=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYizPbCyIJHkYj8JVagyPsSlRndgz1b7A16EN_Q6PY9p5dDUH3woorMWyEOzn_0PN50-8ik1MaNw4NL-rijusL1t18a8UL4=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 8 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbBYM3K7-oAFt6RwSH81PAEqDHYlEobiAwA4DJ3Er2yKrl_l3tTHtXzr-hiyPdhUFa66n7QF__IbO1Iixjc9jPKHoPraojsUN4=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbBYM3K7-oAFt6RwSH81PAEqDHYlEobiAwA4DJ3Er2yKrl_l3tTHtXzr-hiyPdhUFa66n7QF__IbO1Iixjc9jPKHoPraojsUN4=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 9 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZYneo__vcbNuZCxn20Bf0LK9gvUXWo4Feb7J74wkyv_Zh8ie0SvseUnS1sLcVqkXJkVxs8X0CuchmAGMPOU4gnujpI02EZSQ=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZYneo__vcbNuZCxn20Bf0LK9gvUXWo4Feb7J74wkyv_Zh8ie0SvseUnS1sLcVqkXJkVxs8X0CuchmAGMPOU4gnujpI02EZSQ=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 10 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYC0hqJwfFuFCYc2b5hKv-mKDFLh0XEdKovnqCWDEE1WKPdYsI3DnXo6PM6t__TnuGB1RWe2mCUl6_8ktTkyAjH4UuOOdOTQQ=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYC0hqJwfFuFCYc2b5hKv-mKDFLh0XEdKovnqCWDEE1WKPdYsI3DnXo6PM6t__TnuGB1RWe2mCUl6_8ktTkyAjH4UuOOdOTQQ=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 11 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbngPYjiU2MGeXj_tsCyaKoQiIHJsKnKh5Jr5fg2iP_uC2utKqU0omdehLZ5fYBInkyosKVg1vCMirwmN2K27aEzpG7ZLdgSh0=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbngPYjiU2MGeXj_tsCyaKoQiIHJsKnKh5Jr5fg2iP_uC2utKqU0omdehLZ5fYBInkyosKVg1vCMirwmN2K27aEzpG7ZLdgSh0=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 12 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihau2ZJlrcs5ok_ubCxbnuPk1Ut6PPnIvAMg0ogHcfgKZfBb_w6pnfZ1IzQTYvRCOYiYcZ357SBRZitgMKZRqLfrkijBDTjIPeQ=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihau2ZJlrcs5ok_ubCxbnuPk1Ut6PPnIvAMg0ogHcfgKZfBb_w6pnfZ1IzQTYvRCOYiYcZ357SBRZitgMKZRqLfrkijBDTjIPeQ=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 13 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZSvNz97PUhPQ3r-5QvWFQbFWkemkbQ-R7Wgd6hw-GKIA4mEzCeSWVnuyO0UANrIdzT_Na_jTZ0kIGljtKBmXLnMW_imn_xoiQ=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZSvNz97PUhPQ3r-5QvWFQbFWkemkbQ-R7Wgd6hw-GKIA4mEzCeSWVnuyO0UANrIdzT_Na_jTZ0kIGljtKBmXLnMW_imn_xoiQ=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 14 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYMYVotDQkylZ9VYdI1AZA1JTUQGlfxc1itAMSyWq2uoSg8efFhhjCpKJ7O3yn1CD264iscx1M57ExQvBUVqbeKIN6NCr_vkCQ=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYMYVotDQkylZ9VYdI1AZA1JTUQGlfxc1itAMSyWq2uoSg8efFhhjCpKJ7O3yn1CD264iscx1M57ExQvBUVqbeKIN6NCr_vkCQ=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 15 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ8CTpFcdwVEtehJmUufDAXB-eX-nKuJ9q14MQ4QO_e_bIL-VZF_z7hDWnSZy4dGNNvlw1exz8ioBOKt76WjWzNoLOXrsXQVw=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ8CTpFcdwVEtehJmUufDAXB-eX-nKuJ9q14MQ4QO_e_bIL-VZF_z7hDWnSZy4dGNNvlw1exz8ioBOKt76WjWzNoLOXrsXQVw=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 16 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbKCwL3oSsk5qjo0F-dGqiktH1N3V9SSPXCJrsCGSKk8EMUsnfLnMFI3eZ0R4aEBHwXAqI8Zs6V6Wok09RGrMLOpmJr5DwfGZ0=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbKCwL3oSsk5qjo0F-dGqiktH1N3V9SSPXCJrsCGSKk8EMUsnfLnMFI3eZ0R4aEBHwXAqI8Zs6V6Wok09RGrMLOpmJr5DwfGZ0=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 17 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ754BrC3axxVEdjLlC0GaDCwSqqw5nl9oAJDPpnZWzgM_TieyOF3f6KUo8NFJsy5VynNnsKwjf3gSjzr0DbB0fXK1gsg9Ob-g=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ754BrC3axxVEdjLlC0GaDCwSqqw5nl9oAJDPpnZWzgM_TieyOF3f6KUo8NFJsy5VynNnsKwjf3gSjzr0DbB0fXK1gsg9Ob-g=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 18 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZpqgch3QLfbEwsOsCCbda4pu2NyGGDypv7d2N_Qaju6rOzjqwhpfydYCwNadieGiS-ONKSikbqGp4pqoqxwdBVOl8Zsiql6qA=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZpqgch3QLfbEwsOsCCbda4pu2NyGGDypv7d2N_Qaju6rOzjqwhpfydYCwNadieGiS-ONKSikbqGp4pqoqxwdBVOl8Zsiql6qA=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 19 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYmyA797Awc_gIJqQrG4jNexNUqTnchz6NjYZSuQUy9NOjeN3XrGBkK8NF9mvvMMJaoXSm8p6KaY9Y1G2WF0oGvb-bjb8rk_eE=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYmyA797Awc_gIJqQrG4jNexNUqTnchz6NjYZSuQUy9NOjeN3XrGBkK8NF9mvvMMJaoXSm8p6KaY9Y1G2WF0oGvb-bjb8rk_eE=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 20 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZgEVgC3Q6kuIvat-yKD_3tuPliTM1-DGDR28eoVEzzR0uKowPDRNno6DyBvtScdhyd1FbSjQOb6csNAYLt4e-kqBj28huAl9M=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZgEVgC3Q6kuIvat-yKD_3tuPliTM1-DGDR28eoVEzzR0uKowPDRNno6DyBvtScdhyd1FbSjQOb6csNAYLt4e-kqBj28huAl9M=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 21 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbIVe00DUfVvReL9i1W6-LvHOFasQItKfFVz7uUdg6h6Ki7rnBd57jM7pl3l-avIjKIW4geQKTR1ZsfRp9_28Oir841n4C1uQ=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbIVe00DUfVvReL9i1W6-LvHOFasQItKfFVz7uUdg6h6Ki7rnBd57jM7pl3l-avIjKIW4geQKTR1ZsfRp9_28Oir841n4C1uQ=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 22 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbkBCtSeHXoeb9nnPtX2x7NXeUHiDU7dElvt5FrH-3WcPQd_NHmvwXQqO4NVapRIDDa2hk4nHt4nSnij8nGylvFfjuTtbYVWA=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbkBCtSeHXoeb9nnPtX2x7NXeUHiDU7dElvt5FrH-3WcPQd_NHmvwXQqO4NVapRIDDa2hk4nHt4nSnij8nGylvFfjuTtbYVWA=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 23 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZXewxLBolVgOeZoE6fgJOPUqr_hW74dG7cNFAl1I-909t505aXEZoEIGfzqHknH0As_pYKub4qPdjWXDdbQsGytEF1STcVGYU=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZXewxLBolVgOeZoE6fgJOPUqr_hW74dG7cNFAl1I-909t505aXEZoEIGfzqHknH0As_pYKub4qPdjWXDdbQsGytEF1STcVGYU=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 24 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihaH8Dp7a4Jl-QtYBP5h8gV1Pi3buvGUvDeYY_o2Ft3c6KmdJs-SmD45zQA7ZJPSXSKwah6F29FnyQAU3US0C4Xx2SNX7BEMCy4=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaH8Dp7a4Jl-QtYBP5h8gV1Pi3buvGUvDeYY_o2Ft3c6KmdJs-SmD45zQA7ZJPSXSKwah6F29FnyQAU3US0C4Xx2SNX7BEMCy4=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 25 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbZRtWBh7KFO0uQf829E65FfHoktVTkDOjU4WGZabvmf3iDqqYmAL5LBGwi7n0fbDGW_CzCtWCb5cYK-ISwRviBDZK4nnuif8k=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbZRtWBh7KFO0uQf829E65FfHoktVTkDOjU4WGZabvmf3iDqqYmAL5LBGwi7n0fbDGW_CzCtWCb5cYK-ISwRviBDZK4nnuif8k=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 26 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbjQLoJnepPPEm3gYL0UFopAm_zgwM-heQwlG8RMWXJthKd77BKiDudnSzKWbexhbGqTR2C6WEq3kdquZ5l6-FmdmteEowGcQ=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbjQLoJnepPPEm3gYL0UFopAm_zgwM-heQwlG8RMWXJthKd77BKiDudnSzKWbexhbGqTR2C6WEq3kdquZ5l6-FmdmteEowGcQ=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 27 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihb0j-OiAyPJkkh0oWh3TRp0f4JqKU_kRAlLcdKoomjUXooWzuHbrJu5b4HUfSsfV5JiyzYeH9QJV-bnIEV9SXAAZ1yOagHWALw=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihb0j-OiAyPJkkh0oWh3TRp0f4JqKU_kRAlLcdKoomjUXooWzuHbrJu5b4HUfSsfV5JiyzYeH9QJV-bnIEV9SXAAZ1yOagHWALw=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 28 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYS7TNOxT_n_S5nd94v3q4RzMfE6E6YrrIU1qOqaAlVFwPstknqHfyB-VIVEsMB27vCqJndQL6L7h5LRNJEC0e6d7q3Sza-yg=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYS7TNOxT_n_S5nd94v3q4RzMfE6E6YrrIU1qOqaAlVFwPstknqHfyB-VIVEsMB27vCqJndQL6L7h5LRNJEC0e6d7q3Sza-yg=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 29 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpiha5zNXPXPa0aGakGRXT4jueVNeWWgnBjUXCtnmFW3dG1dFoHVtAZf7SE64Uo-d1IUyhmqu5o5ntP8kKojiK6K6VHn8P0uyviw=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpiha5zNXPXPa0aGakGRXT4jueVNeWWgnBjUXCtnmFW3dG1dFoHVtAZf7SE64Uo-d1IUyhmqu5o5ntP8kKojiK6K6VHn8P0uyviw=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 30 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbOrasK8lc-YFpH02aS7fog9lSXkxt5udzZ4eZU9AtTTe__xr81IG4Xuaaw_aRDPQhDbXoUT55oS84kBxiYSDPtiI9ZqujONmQ=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbOrasK8lc-YFpH02aS7fog9lSXkxt5udzZ4eZU9AtTTe__xr81IG4Xuaaw_aRDPQhDbXoUT55oS84kBxiYSDPtiI9ZqujONmQ=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <!-- 31 -->
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZlOqQrZj6S45xbPAUc8HSFMNKjj0C-mH_68TDXRNEwpcQqVv8y_6lzxfJuRwMTttUJEl1KPwOuYEf9qw_Fhfre3g9CnFgvbuo=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZlOqQrZj6S45xbPAUc8HSFMNKjj0C-mH_68TDXRNEwpcQqVv8y_6lzxfJuRwMTttUJEl1KPwOuYEf9qw_Fhfre3g9CnFgvbuo=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1"
-                        class="work__img">
-                </a>
-                <a
-                    href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1?source=screenshot.guru">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1"
-                        class="work__img">
-                </a>
+            <!-- <div class="work__container bd-grid"> -->
+            <div class="image-container">
+                <div class="image-grid">
+                    <!-- 1 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihb5oVfu_TZhWwCHP7VOzZURR6OQbCMuGr_Pi4XQtQJvc-78AJS3xHV06jQYep4cJxBQSXcjTJslJda499hrMugoWraaDzsmM70=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihb5oVfu_TZhWwCHP7VOzZURR6OQbCMuGr_Pi4XQtQJvc-78AJS3xHV06jQYep4cJxBQSXcjTJslJda499hrMugoWraaDzsmM70=s1600-rw-v1"
+                            alt="Image 1" class="work__img">
+                    </a>
+                    <!-- 2 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYKhixwntPp-wG07B5357tOTnkBEBW2gpa-5OHxpQGSue535ReqJ0UJlO0lGaf8nlz_2xz7lKispIjdU15x0XzX7fmhtZ0dCM4=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYKhixwntPp-wG07B5357tOTnkBEBW2gpa-5OHxpQGSue535ReqJ0UJlO0lGaf8nlz_2xz7lKispIjdU15x0XzX7fmhtZ0dCM4=s1600-rw-v1"
+                            alt="Image 2" class="work__img">
+                    </a>
+                    <!-- 3 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihb1gxIk57N1RIvaBna4CcDvRgWenDUWjOAmSi7dNoKFDyLYbD7OU4gMmil9uz9NmRk6h-yj-zHVihiSN7vHjGcs7Lz2OSi40Q=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihb1gxIk57N1RIvaBna4CcDvRgWenDUWjOAmSi7dNoKFDyLYbD7OU4gMmil9uz9NmRk6h-yj-zHVihiSN7vHjGcs7Lz2OSi40Q=s1600-rw-v1"
+                            alt="Image 3" class="work__img">
+                    </a>
+                    <!-- 4 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbCFmxVe0l5D4z__XisffywvDHU6z-LnMaGWrki0WDrXZhjdJ-Z2gxA1ASB1to1qSpnXyW_-1Ig-8gDEFldOs-7FHUnzEySRP4=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbCFmxVe0l5D4z__XisffywvDHU6z-LnMaGWrki0WDrXZhjdJ-Z2gxA1ASB1to1qSpnXyW_-1Ig-8gDEFldOs-7FHUnzEySRP4=s1600-rw-v1"
+                            alt="Image 4" class="work__img">
+                    </a>
+                    <!-- 5 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpiha2BVha4U08tu5hfCllDH3nbIKvjd68w9nyGaqQYkZX65wqRLT_ypMsFc1pwqJj22p_Q_3HFkK1QIT3COC8lL6s7cYKJLtAAQ=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpiha2BVha4U08tu5hfCllDH3nbIKvjd68w9nyGaqQYkZX65wqRLT_ypMsFc1pwqJj22p_Q_3HFkK1QIT3COC8lL6s7cYKJLtAAQ=s1600-rw-v1"
+                            alt="Image 5" class="work__img">
+                    </a>
+                    <!-- 6 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ7d9pKe8UtVqG2kOPADuEAAV8KQYgjrLQguCp6C0_f4kEQxFDMb8IRQzID14BQqLqhfHW87GTAWZKLDuJkoT6MJU-nFjYnmNE=s1600-rw-v1"
+                            alt="Image 6" class="work__img">
+                    </a>
+                    <!-- 7 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYizPbCyIJHkYj8JVagyPsSlRndgz1b7A16EN_Q6PY9p5dDUH3woorMWyEOzn_0PN50-8ik1MaNw4NL-rijusL1t18a8UL4=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYizPbCyIJHkYj8JVagyPsSlRndgz1b7A16EN_Q6PY9p5dDUH3woorMWyEOzn_0PN50-8ik1MaNw4NL-rijusL1t18a8UL4=s1600-rw-v1"
+                            alt="Image 7" class="work__img">
+                    </a>
+                    <!-- 8 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbBYM3K7-oAFt6RwSH81PAEqDHYlEobiAwA4DJ3Er2yKrl_l3tTHtXzr-hiyPdhUFa66n7QF__IbO1Iixjc9jPKHoPraojsUN4=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbBYM3K7-oAFt6RwSH81PAEqDHYlEobiAwA4DJ3Er2yKrl_l3tTHtXzr-hiyPdhUFa66n7QF__IbO1Iixjc9jPKHoPraojsUN4=s1600-rw-v1"
+                            alt="Image 8" class="work__img">
+                    </a>
+                    <!-- 9 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZYneo__vcbNuZCxn20Bf0LK9gvUXWo4Feb7J74wkyv_Zh8ie0SvseUnS1sLcVqkXJkVxs8X0CuchmAGMPOU4gnujpI02EZSQ=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZYneo__vcbNuZCxn20Bf0LK9gvUXWo4Feb7J74wkyv_Zh8ie0SvseUnS1sLcVqkXJkVxs8X0CuchmAGMPOU4gnujpI02EZSQ=s1600-rw-v1"
+                            alt="Image 9" class="work__img">
+                    </a>
+                    <!-- 10 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYC0hqJwfFuFCYc2b5hKv-mKDFLh0XEdKovnqCWDEE1WKPdYsI3DnXo6PM6t__TnuGB1RWe2mCUl6_8ktTkyAjH4UuOOdOTQQ=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYC0hqJwfFuFCYc2b5hKv-mKDFLh0XEdKovnqCWDEE1WKPdYsI3DnXo6PM6t__TnuGB1RWe2mCUl6_8ktTkyAjH4UuOOdOTQQ=s1600-rw-v1"
+                            alt="Image 10" class="work__img">
+                    </a>
+                    <!-- 11 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbngPYjiU2MGeXj_tsCyaKoQiIHJsKnKh5Jr5fg2iP_uC2utKqU0omdehLZ5fYBInkyosKVg1vCMirwmN2K27aEzpG7ZLdgSh0=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbngPYjiU2MGeXj_tsCyaKoQiIHJsKnKh5Jr5fg2iP_uC2utKqU0omdehLZ5fYBInkyosKVg1vCMirwmN2K27aEzpG7ZLdgSh0=s1600-rw-v1"
+                            alt="Image 11" class="work__img">
+                    </a>
+                    <!-- 12 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihau2ZJlrcs5ok_ubCxbnuPk1Ut6PPnIvAMg0ogHcfgKZfBb_w6pnfZ1IzQTYvRCOYiYcZ357SBRZitgMKZRqLfrkijBDTjIPeQ=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihau2ZJlrcs5ok_ubCxbnuPk1Ut6PPnIvAMg0ogHcfgKZfBb_w6pnfZ1IzQTYvRCOYiYcZ357SBRZitgMKZRqLfrkijBDTjIPeQ=s1600-rw-v1"
+                            alt="Image 12" class="work__img">
+                    </a>
+                    <!-- 13 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZSvNz97PUhPQ3r-5QvWFQbFWkemkbQ-R7Wgd6hw-GKIA4mEzCeSWVnuyO0UANrIdzT_Na_jTZ0kIGljtKBmXLnMW_imn_xoiQ=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZSvNz97PUhPQ3r-5QvWFQbFWkemkbQ-R7Wgd6hw-GKIA4mEzCeSWVnuyO0UANrIdzT_Na_jTZ0kIGljtKBmXLnMW_imn_xoiQ=s1600-rw-v1"
+                            alt="Image 13" class="work__img">
+                    </a>
+                    <!-- 14 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYMYVotDQkylZ9VYdI1AZA1JTUQGlfxc1itAMSyWq2uoSg8efFhhjCpKJ7O3yn1CD264iscx1M57ExQvBUVqbeKIN6NCr_vkCQ=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYMYVotDQkylZ9VYdI1AZA1JTUQGlfxc1itAMSyWq2uoSg8efFhhjCpKJ7O3yn1CD264iscx1M57ExQvBUVqbeKIN6NCr_vkCQ=s1600-rw-v1"
+                            alt="Image 14" class="work__img">
+                    </a>
+                    <!-- 15 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ8CTpFcdwVEtehJmUufDAXB-eX-nKuJ9q14MQ4QO_e_bIL-VZF_z7hDWnSZy4dGNNvlw1exz8ioBOKt76WjWzNoLOXrsXQVw=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ8CTpFcdwVEtehJmUufDAXB-eX-nKuJ9q14MQ4QO_e_bIL-VZF_z7hDWnSZy4dGNNvlw1exz8ioBOKt76WjWzNoLOXrsXQVw=s1600-rw-v1"
+                            alt="Image 15" class="work__img">
+                    </a>
+                    <!-- 16 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbKCwL3oSsk5qjo0F-dGqiktH1N3V9SSPXCJrsCGSKk8EMUsnfLnMFI3eZ0R4aEBHwXAqI8Zs6V6Wok09RGrMLOpmJr5DwfGZ0=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbKCwL3oSsk5qjo0F-dGqiktH1N3V9SSPXCJrsCGSKk8EMUsnfLnMFI3eZ0R4aEBHwXAqI8Zs6V6Wok09RGrMLOpmJr5DwfGZ0=s1600-rw-v1"
+                            alt="Image 16" class="work__img">
+                    </a>
+                    <!-- 17 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ754BrC3axxVEdjLlC0GaDCwSqqw5nl9oAJDPpnZWzgM_TieyOF3f6KUo8NFJsy5VynNnsKwjf3gSjzr0DbB0fXK1gsg9Ob-g=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ754BrC3axxVEdjLlC0GaDCwSqqw5nl9oAJDPpnZWzgM_TieyOF3f6KUo8NFJsy5VynNnsKwjf3gSjzr0DbB0fXK1gsg9Ob-g=s1600-rw-v1"
+                            alt="Image 17" class="work__img">
+                    </a>
+                    <!-- 18 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZpqgch3QLfbEwsOsCCbda4pu2NyGGDypv7d2N_Qaju6rOzjqwhpfydYCwNadieGiS-ONKSikbqGp4pqoqxwdBVOl8Zsiql6qA=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZpqgch3QLfbEwsOsCCbda4pu2NyGGDypv7d2N_Qaju6rOzjqwhpfydYCwNadieGiS-ONKSikbqGp4pqoqxwdBVOl8Zsiql6qA=s1600-rw-v1"
+                            alt="Image 18" class="work__img">
+                    </a>
+                    <!-- 19 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYmyA797Awc_gIJqQrG4jNexNUqTnchz6NjYZSuQUy9NOjeN3XrGBkK8NF9mvvMMJaoXSm8p6KaY9Y1G2WF0oGvb-bjb8rk_eE=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYmyA797Awc_gIJqQrG4jNexNUqTnchz6NjYZSuQUy9NOjeN3XrGBkK8NF9mvvMMJaoXSm8p6KaY9Y1G2WF0oGvb-bjb8rk_eE=s1600-rw-v1"
+                            alt="Image 19" class="work__img">
+                    </a>
+                    <!-- 20 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZgEVgC3Q6kuIvat-yKD_3tuPliTM1-DGDR28eoVEzzR0uKowPDRNno6DyBvtScdhyd1FbSjQOb6csNAYLt4e-kqBj28huAl9M=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZgEVgC3Q6kuIvat-yKD_3tuPliTM1-DGDR28eoVEzzR0uKowPDRNno6DyBvtScdhyd1FbSjQOb6csNAYLt4e-kqBj28huAl9M=s1600-rw-v1"
+                            alt="Image 20" class="work__img">
+                    </a>
+                    <!-- 21 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbIVe00DUfVvReL9i1W6-LvHOFasQItKfFVz7uUdg6h6Ki7rnBd57jM7pl3l-avIjKIW4geQKTR1ZsfRp9_28Oir841n4C1uQ=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbIVe00DUfVvReL9i1W6-LvHOFasQItKfFVz7uUdg6h6Ki7rnBd57jM7pl3l-avIjKIW4geQKTR1ZsfRp9_28Oir841n4C1uQ=s1600-rw-v1"
+                            alt="Image 21" class="work__img">
+                    </a>
+                    <!-- 22 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbkBCtSeHXoeb9nnPtX2x7NXeUHiDU7dElvt5FrH-3WcPQd_NHmvwXQqO4NVapRIDDa2hk4nHt4nSnij8nGylvFfjuTtbYVWA=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbkBCtSeHXoeb9nnPtX2x7NXeUHiDU7dElvt5FrH-3WcPQd_NHmvwXQqO4NVapRIDDa2hk4nHt4nSnij8nGylvFfjuTtbYVWA=s1600-rw-v1"
+                            alt="Image 22" class="work__img">
+                    </a>
+                    <!-- 23 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZXewxLBolVgOeZoE6fgJOPUqr_hW74dG7cNFAl1I-909t505aXEZoEIGfzqHknH0As_pYKub4qPdjWXDdbQsGytEF1STcVGYU=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZXewxLBolVgOeZoE6fgJOPUqr_hW74dG7cNFAl1I-909t505aXEZoEIGfzqHknH0As_pYKub4qPdjWXDdbQsGytEF1STcVGYU=s1600-rw-v1"
+                            alt="Image 23" class="work__img">
+                    </a>
+                    <!-- 24 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihaH8Dp7a4Jl-QtYBP5h8gV1Pi3buvGUvDeYY_o2Ft3c6KmdJs-SmD45zQA7ZJPSXSKwah6F29FnyQAU3US0C4Xx2SNX7BEMCy4=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaH8Dp7a4Jl-QtYBP5h8gV1Pi3buvGUvDeYY_o2Ft3c6KmdJs-SmD45zQA7ZJPSXSKwah6F29FnyQAU3US0C4Xx2SNX7BEMCy4=s1600-rw-v1"
+                            alt="Image 24" class="work__img">
+                    </a>
+                    <!-- 25 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbZRtWBh7KFO0uQf829E65FfHoktVTkDOjU4WGZabvmf3iDqqYmAL5LBGwi7n0fbDGW_CzCtWCb5cYK-ISwRviBDZK4nnuif8k=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbZRtWBh7KFO0uQf829E65FfHoktVTkDOjU4WGZabvmf3iDqqYmAL5LBGwi7n0fbDGW_CzCtWCb5cYK-ISwRviBDZK4nnuif8k=s1600-rw-v1"
+                            alt="Image 25" class="work__img">
+                    </a>
+                    <!-- 26 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbjQLoJnepPPEm3gYL0UFopAm_zgwM-heQwlG8RMWXJthKd77BKiDudnSzKWbexhbGqTR2C6WEq3kdquZ5l6-FmdmteEowGcQ=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbjQLoJnepPPEm3gYL0UFopAm_zgwM-heQwlG8RMWXJthKd77BKiDudnSzKWbexhbGqTR2C6WEq3kdquZ5l6-FmdmteEowGcQ=s1600-rw-v1"
+                            alt="Image 26" class="work__img">
+                    </a>
+                    <!-- 27 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihb0j-OiAyPJkkh0oWh3TRp0f4JqKU_kRAlLcdKoomjUXooWzuHbrJu5b4HUfSsfV5JiyzYeH9QJV-bnIEV9SXAAZ1yOagHWALw=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihb0j-OiAyPJkkh0oWh3TRp0f4JqKU_kRAlLcdKoomjUXooWzuHbrJu5b4HUfSsfV5JiyzYeH9QJV-bnIEV9SXAAZ1yOagHWALw=s1600-rw-v1"
+                            alt="Image 27" class="work__img">
+                    </a>
+                    <!-- 28 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYS7TNOxT_n_S5nd94v3q4RzMfE6E6YrrIU1qOqaAlVFwPstknqHfyB-VIVEsMB27vCqJndQL6L7h5LRNJEC0e6d7q3Sza-yg=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYS7TNOxT_n_S5nd94v3q4RzMfE6E6YrrIU1qOqaAlVFwPstknqHfyB-VIVEsMB27vCqJndQL6L7h5LRNJEC0e6d7q3Sza-yg=s1600-rw-v1"
+                            alt="Image 28" class="work__img">
+                    </a>
+                    <!-- 29 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpiha5zNXPXPa0aGakGRXT4jueVNeWWgnBjUXCtnmFW3dG1dFoHVtAZf7SE64Uo-d1IUyhmqu5o5ntP8kKojiK6K6VHn8P0uyviw=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpiha5zNXPXPa0aGakGRXT4jueVNeWWgnBjUXCtnmFW3dG1dFoHVtAZf7SE64Uo-d1IUyhmqu5o5ntP8kKojiK6K6VHn8P0uyviw=s1600-rw-v1"
+                            alt="Image 29" class="work__img">
+                    </a>
+                    <!-- 30 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbOrasK8lc-YFpH02aS7fog9lSXkxt5udzZ4eZU9AtTTe__xr81IG4Xuaaw_aRDPQhDbXoUT55oS84kBxiYSDPtiI9ZqujONmQ=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbOrasK8lc-YFpH02aS7fog9lSXkxt5udzZ4eZU9AtTTe__xr81IG4Xuaaw_aRDPQhDbXoUT55oS84kBxiYSDPtiI9ZqujONmQ=s1600-rw-v1"
+                            alt="Image 30" class="work__img">
+                    </a>
+                    <!-- 31 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZlOqQrZj6S45xbPAUc8HSFMNKjj0C-mH_68TDXRNEwpcQqVv8y_6lzxfJuRwMTttUJEl1KPwOuYEf9qw_Fhfre3g9CnFgvbuo=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZlOqQrZj6S45xbPAUc8HSFMNKjj0C-mH_68TDXRNEwpcQqVv8y_6lzxfJuRwMTttUJEl1KPwOuYEf9qw_Fhfre3g9CnFgvbuo=s1600-rw-v1"
+                            alt="Image 31" class="work__img">
+                    </a>
+                    <!-- 32 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihayK3MVVmGaa0q6VKGY5MOiZ6M1Y0nXqvl00Qg5pHki2hp1ZUJKFHHwioRM9BXeWTrrQUyZQksMcw9Q6am8pdiRI25dW-yl0Cs=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihayK3MVVmGaa0q6VKGY5MOiZ6M1Y0nXqvl00Qg5pHki2hp1ZUJKFHHwioRM9BXeWTrrQUyZQksMcw9Q6am8pdiRI25dW-yl0Cs=s1600-rw-v1"
+                            alt="Image 33" class="work__img">
+                    </a>
+                    <!-- 33 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihabrsY4cGkigLr9cVpVvGinwB8C3HXWOEoNZTowuIyWt_w8BM2tkjNiIzDkr5J-EUTgEQUI39okl08-c8uiG5jfJDgyxQGC_A=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihabrsY4cGkigLr9cVpVvGinwB8C3HXWOEoNZTowuIyWt_w8BM2tkjNiIzDkr5J-EUTgEQUI39okl08-c8uiG5jfJDgyxQGC_A=s1600-rw-v1"
+                            alt="Image 34" class="work__img">
+                    </a>
+                    <!-- 34 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZYmA_0IkgfkCOzBJ2DQSsMs1THGjGgK3Lggm0jGlJNcJuMMo9ikZMigkopFg9VLRSS7W_BWIWXI0RkUr8BP3H5DW8S2f-N2J4=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZYmA_0IkgfkCOzBJ2DQSsMs1THGjGgK3Lggm0jGlJNcJuMMo9ikZMigkopFg9VLRSS7W_BWIWXI0RkUr8BP3H5DW8S2f-N2J4=s1600-rw-v1"
+                            alt="Image 35" class="work__img">
+                    </a>
+                    <!-- 35 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbFgb2kG5hnxEflB3FZV-3dOteIFYfoLKbPbyMkYFlQlTRwAD7ybxrlyJL4gQq9WuGzYIhlblZLW6At0Cp5E0rbxY3kEvg23m8=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbFgb2kG5hnxEflB3FZV-3dOteIFYfoLKbPbyMkYFlQlTRwAD7ybxrlyJL4gQq9WuGzYIhlblZLW6At0Cp5E0rbxY3kEvg23m8=s1600-rw-v1"
+                            alt="Image 36" class="work__img">
+                    </a>
+                    <!-- 36 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihYYaGyfSlAyjx6ivG7ZgQR_nhYmuyxpqR4V3N8xNtxFduaQb24W_VKCHJilh8m_lnXqut5DaILz9ObdtbWciJsIEUYovRObNCw=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihYYaGyfSlAyjx6ivG7ZgQR_nhYmuyxpqR4V3N8xNtxFduaQb24W_VKCHJilh8m_lnXqut5DaILz9ObdtbWciJsIEUYovRObNCw=s1600-rw-v1"
+                            alt="Image 37" class="work__img">
+                    </a>
+                    <!-- 37 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbUd2Me9wgt7RJG8joaWHI-jjBfCK-g7y9qFZhGYSn3zThU1_rZqFGrq7U5Q03WaRToQbnV5hO_zkjTrRY1Z-O1Asgs-J4fyNM=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbUd2Me9wgt7RJG8joaWHI-jjBfCK-g7y9qFZhGYSn3zThU1_rZqFGrq7U5Q03WaRToQbnV5hO_zkjTrRY1Z-O1Asgs-J4fyNM=s1600-rw-v1"
+                            alt="Image 38" class="work__img">
+                    </a>
+                    <!-- 38 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbEgOMwaGaJdDsMSSeZR6IdCyt9Z8rosnKLSWV561I4qrzUynNmej5qL0RWvzGgDgxnG4ktzq3CnJDD91tzkjCupDi_YmLw2NM=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbEgOMwaGaJdDsMSSeZR6IdCyt9Z8rosnKLSWV561I4qrzUynNmej5qL0RWvzGgDgxnG4ktzq3CnJDD91tzkjCupDi_YmLw2NM=s1600-rw-v1"
+                            alt="Image 39" class="work__img">
+                    </a>
+                    <!-- 39 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ6BXSKjN906om8Nh8MMTca-XcqXwsd6kC-waFtwTpTPaVwZJwrlScWv_O35c03K5LItkbZazbaQnU91um_A4X5XN5jNQP2J_I=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZ6BXSKjN906om8Nh8MMTca-XcqXwsd6kC-waFtwTpTPaVwZJwrlScWv_O35c03K5LItkbZazbaQnU91um_A4X5XN5jNQP2J_I=s1600-rw-v1"
+                            alt="Image 40" class="work__img">
+                    </a>
+                    <!-- 40 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZmyUu3enHHqdk2sUlRESUbRM2Nq5AHXFfmfvzxY8i_iOaTXybdxqOe-hoAxeCDCcDgzICxv9ilxDdpUaRaLmVy2IY-Yg6xVE0=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZmyUu3enHHqdk2sUlRESUbRM2Nq5AHXFfmfvzxY8i_iOaTXybdxqOe-hoAxeCDCcDgzICxv9ilxDdpUaRaLmVy2IY-Yg6xVE0=s1600-rw-v1"
+                            alt="Image 41" class="work__img">
+                    </a>
+                    <!-- 41 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbbxHBh3Xj4PBCOUWUaeQxyPdfBHZSK-rAmSd2tYsD2L89vO3vON_-4NnOJw-0MXN3JLxTxtnpjZ39FGyQnOB_cByZLikvmmw=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbbxHBh3Xj4PBCOUWUaeQxyPdfBHZSK-rAmSd2tYsD2L89vO3vON_-4NnOJw-0MXN3JLxTxtnpjZ39FGyQnOB_cByZLikvmmw=s1600-rw-v1"
+                            alt="Image 42" class="work__img">
+                    </a>
+                    <!-- 42 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZdvNpDTniDPUtXpU6P4XcpxJA9hxUJhfNJC27C9q78w-rY-do1Zak31OfEL9VI0dFoeX4ne4w4T1BohVQ4HXxpZnzNmA1Ca1Y=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZdvNpDTniDPUtXpU6P4XcpxJA9hxUJhfNJC27C9q78w-rY-do1Zak31OfEL9VI0dFoeX4ne4w4T1BohVQ4HXxpZnzNmA1Ca1Y=s1600-rw-v1"
+                            alt="Image 43" class="work__img">
+                    </a>
+                    <!-- 43 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihaweacMSMDca6FmyHMBZEw4laxbrknmA_jUcFfiyeGeHSGTJzQScOByl3wf2ENrpkxYLruwhc9CA5pyxxe97qVqJnlZyErpj9k=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaweacMSMDca6FmyHMBZEw4laxbrknmA_jUcFfiyeGeHSGTJzQScOByl3wf2ENrpkxYLruwhc9CA5pyxxe97qVqJnlZyErpj9k=s1600-rw-v1"
+                            alt="Image 44" class="work__img">
+                    </a>
+                    <!-- 44 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpiha0qLNydB_I_5aombt-Xg3B8IloS3tnS3K99Ir4S7M806xrQaQoCQG0aF63Y-j7STgnPTE-wRSSD2nZ50fg0gUSuqFVZ55FHjU=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpiha0qLNydB_I_5aombt-Xg3B8IloS3tnS3K99Ir4S7M806xrQaQoCQG0aF63Y-j7STgnPTE-wRSSD2nZ50fg0gUSuqFVZ55FHjU=s1600-rw-v1"
+                            alt="Image 45" class="work__img">
+                    </a>
+                    <!-- 45 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZwXuVb8zrBQsTShcccp7QM1gU9mPbaxlhiumuDNaVMLeOFhBWAl40njdnoucAPCL0CMP_xPuhG1I4Ajqpbu2LZv_oPfUe7Em0=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZwXuVb8zrBQsTShcccp7QM1gU9mPbaxlhiumuDNaVMLeOFhBWAl40njdnoucAPCL0CMP_xPuhG1I4Ajqpbu2LZv_oPfUe7Em0=s1600-rw-v1"
+                            alt="Image 46" class="work__img">
+                    </a>
+                    <!-- 46 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZopUVmW1H9NFJAd7zZqVTbzC5ocfxYDwufQc3crNb1fp4uJEmrQhImsCCB3aier4Wv0slGpv50trT6YZbdSedFfvc5IwZQoh0=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZopUVmW1H9NFJAd7zZqVTbzC5ocfxYDwufQc3crNb1fp4uJEmrQhImsCCB3aier4Wv0slGpv50trT6YZbdSedFfvc5IwZQoh0=s1600-rw-v1"
+                            alt="Image 47" class="work__img">
+                    </a>
+                    <!-- 47 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbCx7rCOBCGcgxXWerAuQKSt610NgScb4l6wQnzoaFp4mzVMnNgm9aCj4CZLf8SOEo7MaFH95Jpuq4djqgnaioPTFR7CWP9Mg=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbCx7rCOBCGcgxXWerAuQKSt610NgScb4l6wQnzoaFp4mzVMnNgm9aCj4CZLf8SOEo7MaFH95Jpuq4djqgnaioPTFR7CWP9Mg=s1600-rw-v1"
+                            alt="Image 48" class="work__img">
+                    </a>
+                    <!-- 48 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihbCx7rCOBCGcgxXWerAuQKSt610NgScb4l6wQnzoaFp4mzVMnNgm9aCj4CZLf8SOEo7MaFH95Jpuq4djqgnaioPTFR7CWP9Mg=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbCx7rCOBCGcgxXWerAuQKSt610NgScb4l6wQnzoaFp4mzVMnNgm9aCj4CZLf8SOEo7MaFH95Jpuq4djqgnaioPTFR7CWP9Mg=s1600-rw-v1"
+                            alt="Image 49" class="work__img">
+                    </a>
+                    <!-- 49 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZLAqoB0OvnJx5-Y6CN_pzQZNMXGEm2rj2htRHYOCiMVwwq8LghCw_d0z3BBDgl0sFYzWihXGpsDgrrmb-10zTm0FGPgUS1Ug=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZLAqoB0OvnJx5-Y6CN_pzQZNMXGEm2rj2htRHYOCiMVwwq8LghCw_d0z3BBDgl0sFYzWihXGpsDgrrmb-10zTm0FGPgUS1Ug=s1600-rw-v1"
+                            alt="Image 50" class="work__img">
+                    </a>
+                    <!-- 50 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihaIX55-RjjAIla4c1NdjgckNSZfTG5ngY-Opm2FBqE1fXlHBXUBOM_5G2ZLkE9cgeqEWr6DL-GRAP3Vp9AYEEqNR1rVIPwzH3E=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaIX55-RjjAIla4c1NdjgckNSZfTG5ngY-Opm2FBqE1fXlHBXUBOM_5G2ZLkE9cgeqEWr6DL-GRAP3Vp9AYEEqNR1rVIPwzH3E=s1600-rw-v1"
+                            alt="Image 51" class="work__img">
+                    </a>
+                    <!-- 51 -->
+                    <a
+                        href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZlFWgeAg6-q36EWs5yCM7LMjmSVdOYSPBbZTzMGIr3djN1-rEAhsGO2YPwH-4_Ty5uNx5ESzxuYwDQHiSR3P5X_EKiJLUL22I=s1600-rw-v1?source=screenshot.guru">
+                        <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihZlFWgeAg6-q36EWs5yCM7LMjmSVdOYSPBbZTzMGIr3djN1-rEAhsGO2YPwH-4_Ty5uNx5ESzxuYwDQHiSR3P5X_EKiJLUL22I=s1600-rw-v1"
+                            alt="Image 52" class="work__img">
+                    </a>
+                </div>
+                <button id="viewMoreBtn">View More</button>
             </div>
         </section>
 
@@ -367,11 +485,12 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Submit" class="contact__button button">
+                <form action="https://formspree.io/f/mrbzzegp" method="post" class="contact__form">
+                    <input type="text" placeholder="Name" name="name" class="contact__input" required>
+                    <input type="mail" placeholder="Email" name="email" class="contact__input" required>
+                    <textarea placeholder="Your Message" id="message" name="message" cols="0" rows="10"
+                        class="contact__input" required></textarea>
+                    <input type="submit" value="Submit" class="contact__button button">
                 </form>
             </div>
         </section>
@@ -394,6 +513,7 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
