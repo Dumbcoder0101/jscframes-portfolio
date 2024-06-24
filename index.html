@@ -18,51 +18,52 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <img src="assets/img/logo.png" alt="JSC-Frames" class="responsive-img" />
-
-            </div>
-
-            <div class="nav__menu" id="nav-menu" class="navbar">
-                <ul class="nav__list" class="nav-list">
+                <a href="#home">
+                    <img src="assets/img/logo.png" alt="JSC-Frames" class="responsive-img" />
+                </a>
+            </div>            
+        
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item dropdown">
-                        <a href="#" class="nav__link dropdown-toggle">Work</a>
-                        <ul class="dropdown-menu" class="nav__item">
-                            <li class="dropdown-item"  >
-                                <a href="#" class="nav__link">Food</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a href="#" class="nav__link">Nature</a>
-                            </li>
-                            <!-- Add more subcategories as needed -->
+                        <a href="#work" class="nav__link dropdown-toggle" id="work-link">
+                            Work <img src="assets/img/down-arrow.png" class="dropdown-icon" alt="Expand" id="dropdown-arrow">
+                        </a>
+                        <ul class="dropdown-menu" id="work-dropdown">
+                            <li class="dropdown-item"><a href="#work" class="nav__link">Birthday photography</a></li>
+                            <li class="dropdown-item"><a href="#work" class="nav__link">Wedding photography</a></li>
+                            <li class="dropdown-item"><a href="#work" class="nav__link">Graduation shoot</a></li>
+                            <li class="dropdown-item"><a href="#work" class="nav__link">Lifestyle/portraits</a></li>
                         </ul>
                     </li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
-
+        
             <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
             </div>
-        </nav>
+        </nav>                
+        
     </header>
 
     <main class="l-main">
         <!--===== HOME =====-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hi, I am a<br><span class="home__title-color">Photographer</span></h1>
+                <h1 class="home__title">Hi, I am<br>Jafer Chikhly<br><span class="home__title-color">Photographer</span></h1>
             </div>
 
-            <div class="home__social">
-                <!-- <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a> -->
-                <!-- <a href="https://www.instagram.com/jscframes?igsh=ZTl6OXM5d2Rvb3Zr" target="_blank"
-                    class="home__social-icon"><i class='bx bxl-instagram'></i></a> -->
-                <!-- <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a> -->
-            </div>
+            <!-- <div class="home__social">
+                <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                <a href="https://www.instagram.com/jscframes?igsh=ZTl6OXM5d2Rvb3Zr" target="_blank"
+                    class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+            </div> -->
 
-            <div class="home__img">
+            <div class="home__img" class="home bd-grid">
                 <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                     <mask id="mask0" mask-type="alpha">
@@ -77,10 +78,18 @@
                 </svg>
                 <!-- <a href="mailto:Jaferchikhly01@gmail.com" class="button">Contact</a> -->
             </div>
+            <section class="about__section " id="about">
+                <h2 class="section-title">About</h2>    
+                <div>
+                        <p class="about__text">A skilled photographer and videographer based in Kuwait with two years of
+                            experience, capturing stunning visuals for weddings, events, and lifestyle shoots, blending
+                            technical expertise with artistic vision.</p>
+                </div>
+            </section>
         </section>
 
         <!--===== ABOUT =====-->
-        <section class="about section " id="about">
+        <!-- <section class="about section " id="about">
             <h2 class="section-title">About</h2>
 
             <div class="about__container bd-grid">
@@ -95,7 +104,7 @@
                         technical expertise with artistic vision.</p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--===== SKILLS =====-->
         <!-- <section class="skills section" id="skills">

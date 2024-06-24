@@ -102,6 +102,7 @@ img {
   display: grid;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
+  margin-block-end: auto;
 }
 
 .l-header {
@@ -115,6 +116,7 @@ img {
 }
 
 /*===== NAV =====*/
+/* General Navbar Styles */
 .nav {
   height: var(--header-height);
   display: flex;
@@ -122,28 +124,35 @@ img {
   align-items: center;
   font-weight: var(--font-semi);
 }
+
 @media screen and (max-width: 767px) {
   .nav__menu {
-    position: fixed;
-    top: var(--header-height);
-    right: -100%;
-    width: 80%;
-    height: 100%;
-    padding: 2rem;
-    background-color: var(--second-color);
-    transition: 0.5s;
+      position: fixed;
+      top: var(--header-height);
+      right: -100%;
+      width: 80%;
+      height: 100%;
+      padding: 2rem;
+      background-color: var(--second-color);
+      transition: 0.5s;
   }
 }
+
 .nav__item {
   margin-bottom: var(--mb-4);
 }
+
 .nav__link {
   position: relative;
   color: #fff;
+  display: flex;
+  align-items: center;
 }
+
 .nav__link:hover {
   position: relative;
 }
+
 .nav__link:hover::after {
   position: absolute;
   content: "";
@@ -153,17 +162,19 @@ img {
   top: 2rem;
   background-color: var(--first-color);
 }
+
 .nav__logo {
-    width: 200px;    
-    height: 100px;
+  width: 200px;
+  height: 100px;
 }
+
 .nav__toggle {
   color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
 }
 
-/* Dropdown */
+/* Dropdown Menu Specific Styles */
 .navbar {
   background-color: #f8f9fa; /* Example background color */
   padding: 10px;
@@ -190,27 +201,58 @@ img {
   display: inline-block;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-icon {
+  width: 10px; /* Adjust width as needed */
+  height: auto;
+  margin-left: 5px; /* Adjust spacing between icon and text */
+  vertical-align: middle; /* Align with text */
+  display: inline-flex; /* Ensure it stays inline with text */
+}
+
 .dropdown-menu {
   display: none;
-  position: relative;
+  position: absolute;
+  top: 100%; /* Position it just below the parent */
+  left: 50%; /* Center align the dropdown menu */
+  transform: translateX(-50%); /* Center align the dropdown menu */
   background-color: #fff; /* Dropdown background color */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Dropdown box shadow */
   z-index: 1; /* Ensure dropdown stays on top of other content */
-}
-
-.dropdown-menu.show {
-  display: block; /* Show dropdown menu when parent li is hovered or clicked */
+  padding: 10px 0;
+  list-style: none;
+  width: 200px; /* Adjust width as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items */
 }
 
 .dropdown-item {
   padding: 10px;
+  white-space: nowrap;
+  text-align: center; /* Center align the text */
+  width: 100%; /* Ensure the item takes the full width */
+  display: flex;
+  justify-content: center; /* Center align the text horizontally */
+}
+
+/* Remove hover style */
+.dropdown:hover .dropdown-menu {
+  display: none; /* Ensure the dropdown does not open on hover */
 }
 
 .dropdown-item:hover {
   background-color: #f1f1f1; /* Background color on hover */
 }
 
-
+/* Add this class for rotation */
+.rotate-180 {
+  transform: rotate(180deg);
+}
 
 /*Active menu*/
 .active-link::after {
@@ -231,9 +273,9 @@ img {
 /*===== HOME =====*/
 .home {
   position: relative;
-  padding: 4rem 0 5rem;
+  padding: 2rem 0 3rem;
   display: grid;
-  gap: 2rem;
+  gap: 0.5rem;
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
@@ -309,6 +351,31 @@ img {
 .about__container {
   row-gap: 2rem;
   text-align: center;
+}
+.about__text {
+  text-align: center; /* Center-align the text */
+  margin: 0 auto; /* Center the block element itself */
+  padding: 10px; /* Add some padding for better readability */
+  max-width: 800px; /* Limit the maximum width for better readability */
+  font-size: 1.2rem; /* Base font size */
+  line-height: 1.5; /* Improve line spacing for readability */
+  color: #333; /* Text color */
+}
+
+  /* Responsive typography */
+  @media (max-width: 1200px) {
+      font-size: 1.1rem; /* Slightly increase font size on larger screens */
+  }
+
+  @media (max-width: 768px) {
+      font-size: 1rem; /* Default font size for medium screens */
+      padding: 15px; /* Adjust padding for medium screens */
+  }
+
+  @media (max-width: 576px) {
+      font-size: 0.9rem; /* Smaller font size on small screens */
+      padding: 10px; /* Adjust padding for small screens */
+  }
 }
 .about__subtitle {
   font-weight: var(--font-semi);
@@ -609,5 +676,5 @@ body {
 .responsive-img {
   max-width: 20%;
   height: auto;
+  width: 15%;
 }
-
