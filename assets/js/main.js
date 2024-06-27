@@ -14,12 +14,17 @@ showMenu("nav-toggle", "nav-menu");
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll(".nav__link");
 
-function linkAction() {
+function linkAction(e) {
   const navMenu = document.getElementById("nav-menu");
-  // When we click on each nav__link, we remove the show-menu class
-  navMenu.classList.remove("show");
+
+  // Check if the clicked link is not the dropdown toggle
+  if (!e.target.classList.contains("dropdown-toggle")) {
+    navMenu.classList.remove("show");
+  }
 }
+
 navLink.forEach((n) => n.addEventListener("click", linkAction));
+
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
@@ -99,54 +104,56 @@ document.addEventListener("DOMContentLoaded", () => {
 //Dropdown functionality
 
 document.addEventListener("DOMContentLoaded", function () {
-  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
-
-  dropdownToggles.forEach((toggle) => {
-    toggle.addEventListener("click", function (e) {
-      e.preventDefault();
-      const dropdownMenu = toggle.nextElementSibling;
-      dropdownMenu.classList.toggle("show");
+    const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+  
+    dropdownToggles.forEach((toggle) => {
+      toggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        const dropdownMenu = toggle.nextElementSibling;
+        dropdownMenu.classList.toggle("show");
+      });
+  
+      // Close dropdowns when clicking outside
+      document.addEventListener("click", function (e) {
+        if (!toggle.parentNode.contains(e.target)) {
+          const dropdownMenu = toggle.nextElementSibling;
+          dropdownMenu.classList.remove("show");
+        }
+      });
     });
-
-    // Close dropdowns when clicking outside
-    document.addEventListener("click", function (e) {
-      if (!toggle.parentNode.contains(e.target)) {
-        dropdownMenu.classList.remove("show");
+  });
+  
+  //Dropdown arrow hover function
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const workLink = document.getElementById("work-link");
+    const dropdownArrow = document.getElementById("dropdown-arrow");
+    const workDropdown = document.getElementById("work-dropdown");
+  
+    workLink.addEventListener("click", (e) => {
+      e.preventDefault(); // Prevent default link behavior
+  
+      if (workDropdown.style.display === "block") {
+        workDropdown.style.display = "none";
+        dropdownArrow.classList.remove("rotate-180"); // Remove rotation
+      } else {
+        workDropdown.style.display = "block";
+        dropdownArrow.classList.add("rotate-180"); // Add rotation
       }
     });
+  
+    // Close the dropdown if clicked outside
+    document.addEventListener("click", (e) => {
+      if (!workLink.contains(e.target) && !workDropdown.contains(e.target)) {
+        workDropdown.style.display = "none";
+        dropdownArrow.classList.remove("rotate-180"); // Remove rotation
+      }
+    });
+  
+    // Ensure dropdown is hidden on page load
+    workDropdown.style.display = "none";
   });
-});
-
-//Dropdown arrow hover function
-
-document.addEventListener("DOMContentLoaded", () => {
-  const workLink = document.getElementById("work-link");
-  const dropdownArrow = document.getElementById("dropdown-arrow");
-  const workDropdown = document.getElementById("work-dropdown");
-
-  workLink.addEventListener("click", (e) => {
-    e.preventDefault(); // Prevent default link behavior
-
-    if (workDropdown.style.display === "block") {
-      workDropdown.style.display = "none";
-      dropdownArrow.classList.remove("rotate-180"); // Remove rotation
-    } else {
-      workDropdown.style.display = "block";
-      dropdownArrow.classList.add("rotate-180"); // Add rotation
-    }
-  });
-
-  // Close the dropdown if clicked outside
-  document.addEventListener("click", (e) => {
-    if (!workLink.contains(e.target) && !workDropdown.contains(e.target)) {
-      workDropdown.style.display = "none";
-      dropdownArrow.classList.remove("rotate-180"); // Remove rotation
-    }
-  });
-
-  // Ensure dropdown is hidden on page load
-  workDropdown.style.display = "none";
-});
+  
 //Back to top JS
 
 // Get the button
