@@ -176,3 +176,15 @@ function scrollFunction() {
 mybutton.addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+// Progress bar functionality
+
+window.onscroll = function() {
+  const progressBar = document.getElementById('progressBar');
+  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+  const clientHeight = document.documentElement.clientHeight || window.innerHeight;
+  const scrollPercent = (scrollTop / (scrollHeight - clientHeight)) * 100;
+
+  progressBar.style.width = scrollPercent + '%';
+};
