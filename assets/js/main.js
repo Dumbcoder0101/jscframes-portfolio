@@ -68,13 +68,13 @@ sr.reveal(".skills__data, .work__img, .contact__input", { interval: 200 });
 // VIEW MORE BUTTON
 
 document.addEventListener("DOMContentLoaded", () => {
-  const images = document.querySelectorAll(".image-grid a");
+  const images = document.querySelectorAll(".image-grid iframe");
   const viewMoreBtn = document.getElementById("viewMoreBtn");
   let isShowingMore = false;
 
-  // Initially show only the first 6 images
+  // Initially show only the first 8 images
   images.forEach((image, index) => {
-    if (index >= 6) {
+    if (index >= 8) {
       image.style.display = "none";
     }
   });
@@ -83,26 +83,33 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isShowingMore) {
       // Hide extra images
       images.forEach((image, index) => {
-        // alert("View more images?");
-        if (index >= 6) {
+        if (index >= 8) {
           image.style.display = "none";
         }
       });
       viewMoreBtn.textContent = "Show More";
-      alert("View less images?");
     } else {
-      // Show all images
-      images.forEach((image) => {
-        image.style.display = "block";
-      });
-      viewMoreBtn.textContent = "Show Less";
+      // Ask for password to show more images
+      const password = prompt("Enter password to view more images:");
+      const correctPassword = "jscframes786110"; // Replace with your actual password
+
+      if (password === correctPassword) {
+        // Show all images if the password is correct
+        images.forEach((image, index) => {
+          if (index >= 8) {
+            image.style.display = "block";
+          }
+        });
+        viewMoreBtn.textContent = "Show Less";
+      } else {
+        alert("Incorrect password!");
+      }
     }
     isShowingMore = !isShowingMore;
   });
 });
 
 //Dropdown functionality
-
 document.addEventListener("DOMContentLoaded", function () {
     const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
   
@@ -154,37 +161,32 @@ document.addEventListener("DOMContentLoaded", function () {
     workDropdown.style.display = "none";
   });
   
-//Back to top JS
+  document.addEventListener("DOMContentLoaded", () => {
+    // Get the button
+    let mybutton = document.getElementById("back-to-top");
 
-// Get the button
-let mybutton = document.getElementById("back-to-top");
+    if (!mybutton) {
+      console.error("Back to top button not found");
+      return;
+    }
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+    function scrollFunction() {
+      console.log('Scroll event detected');
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
 
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", function () {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
-// Progress bar functionality
-
-window.onscroll = function() {
-  const progressBar = document.getElementById('progressBar');
-  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-  const clientHeight = document.documentElement.clientHeight || window.innerHeight;
-  const scrollPercent = (scrollTop / (scrollHeight - clientHeight)) * 100;
-
-  progressBar.style.width = scrollPercent + '%';
-};
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", function () {
+      console.log('Back to top button clicked');
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
