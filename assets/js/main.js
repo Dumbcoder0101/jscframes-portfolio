@@ -25,7 +25,6 @@ function linkAction(e) {
 
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
 
@@ -111,82 +110,101 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //Dropdown functionality
 document.addEventListener("DOMContentLoaded", function () {
-    const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
-  
-    dropdownToggles.forEach((toggle) => {
-      toggle.addEventListener("click", function (e) {
-        e.preventDefault();
+  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+
+  dropdownToggles.forEach((toggle) => {
+    toggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      const dropdownMenu = toggle.nextElementSibling;
+      dropdownMenu.classList.toggle("show");
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener("click", function (e) {
+      if (!toggle.parentNode.contains(e.target)) {
         const dropdownMenu = toggle.nextElementSibling;
-        dropdownMenu.classList.toggle("show");
-      });
-  
-      // Close dropdowns when clicking outside
-      document.addEventListener("click", function (e) {
-        if (!toggle.parentNode.contains(e.target)) {
-          const dropdownMenu = toggle.nextElementSibling;
-          dropdownMenu.classList.remove("show");
-        }
-      });
-    });
-  });
-  
-  //Dropdown arrow hover function
-  
-  document.addEventListener("DOMContentLoaded", () => {
-    const workLink = document.getElementById("work-link");
-    const dropdownArrow = document.getElementById("dropdown-arrow");
-    const workDropdown = document.getElementById("work-dropdown");
-  
-    workLink.addEventListener("click", (e) => {
-      e.preventDefault(); // Prevent default link behavior
-  
-      if (workDropdown.style.display === "block") {
-        workDropdown.style.display = "none";
-        dropdownArrow.classList.remove("rotate-180"); // Remove rotation
-      } else {
-        workDropdown.style.display = "block";
-        dropdownArrow.classList.add("rotate-180"); // Add rotation
+        dropdownMenu.classList.remove("show");
       }
     });
-  
-    // Close the dropdown if clicked outside
-    document.addEventListener("click", (e) => {
-      if (!workLink.contains(e.target) && !workDropdown.contains(e.target)) {
-        workDropdown.style.display = "none";
-        dropdownArrow.classList.remove("rotate-180"); // Remove rotation
-      }
-    });
-  
-    // Ensure dropdown is hidden on page load
-    workDropdown.style.display = "none";
   });
-  
-  document.addEventListener("DOMContentLoaded", () => {
-    // Get the button
-    let mybutton = document.getElementById("back-to-top");
+});
 
-    if (!mybutton) {
-      console.error("Back to top button not found");
-      return;
+//Dropdown arrow hover function
+
+document.addEventListener("DOMContentLoaded", () => {
+  const workLink = document.getElementById("work-link");
+  const dropdownArrow = document.getElementById("dropdown-arrow");
+  const workDropdown = document.getElementById("work-dropdown");
+
+  workLink.addEventListener("click", (e) => {
+    e.preventDefault(); // Prevent default link behavior
+
+    if (workDropdown.style.display === "block") {
+      workDropdown.style.display = "none";
+      dropdownArrow.classList.remove("rotate-180"); // Remove rotation
+    } else {
+      workDropdown.style.display = "block";
+      dropdownArrow.classList.add("rotate-180"); // Add rotation
     }
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () {
-      scrollFunction();
-    };
-
-    function scrollFunction() {
-      console.log('Scroll event detected');
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    mybutton.addEventListener("click", function () {
-      console.log('Back to top button clicked');
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
   });
+
+  // Close the dropdown if clicked outside
+  document.addEventListener("click", (e) => {
+    if (!workLink.contains(e.target) && !workDropdown.contains(e.target)) {
+      workDropdown.style.display = "none";
+      dropdownArrow.classList.remove("rotate-180"); // Remove rotation
+    }
+  });
+
+  // Ensure dropdown is hidden on page load
+  workDropdown.style.display = "none";
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Get the button
+  let mybutton = document.getElementById("back-to-top");
+
+  if (!mybutton) {
+    console.error("Back to top button not found");
+    return;
+  }
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    console.log("Scroll event detected");
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.addEventListener("click", function () {
+    console.log("Back to top button clicked");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
+
+// Progress bar functionality
+
+document.addEventListener("DOMContentLoaded", function () {
+  window.onscroll = function () {
+    const progressBar = document.getElementById("progressBar");
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+    const clientHeight = document.documentElement.clientHeight || window.innerHeight;
+    const scrollPercent = (scrollTop / (scrollHeight - clientHeight)) * 100;
+
+    console.log("scrollTop:", scrollTop, "scrollHeight:", scrollHeight, "clientHeight:", clientHeight, "scrollPercent:", scrollPercent);
+
+    progressBar.style.width = scrollPercent + "%";
+  };
+});

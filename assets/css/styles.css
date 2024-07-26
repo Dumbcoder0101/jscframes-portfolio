@@ -316,6 +316,7 @@ img {
     /* Ensure dropdown has a higher z-index */
   }
 }
+
 /* Progress Bar */
 .progress-container {
   position: fixed;
@@ -336,7 +337,8 @@ img {
 .content {
   padding: 20px;
   margin-top: 10px;
-  height: 2000px; /* Adjust height to ensure scrolling */
+  height: 2000px;
+  /* Adjust height to ensure scrolling */
 }
 
 /*Active menu*/
@@ -799,7 +801,8 @@ body {
 }
 
 .image-container {
-  max-width: 1300px; /* Width adjustment for 4 columns */
+  max-width: 1300px;
+  /* Width adjustment for 4 columns */
   margin: 0 auto;
   padding-left: 60px;
   text-align: center;
@@ -807,50 +810,61 @@ body {
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns layout */
-  gap: 15px; /* Spacing between images */
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 columns layout */
+  gap: 15px;
+  /* Spacing between images */
   margin: 20px auto;
 }
 
 .image-grid iframe {
   zoom: 80%;
   width: 100%;
-  height: 250px; /* Default height */
+  height: 250px;
+  /* Default height */
   border: none;
   box-shadow: 0 0 0 1px white;
-  border-radius: 10px; /* Optional: Add rounded corners */
+  border-radius: 10px;
+  /* Optional: Add rounded corners */
 }
 
 .image-grid iframe:hover {
-  transform: scale(1.05); /* Optional: Add a hover effect */
+  transform: scale(1.05);
+  /* Optional: Add a hover effect */
   transition: transform 0.3s ease-in-out;
 }
 
 /* Responsive Design */
 @media (max-width: 1200px) {
   .image-grid {
-    grid-template-columns: repeat(4, 1fr); /* 3 columns layout for medium screens */
+    grid-template-columns: repeat(4, 1fr);
+    /* 3 columns layout for medium screens */
   }
 }
 
 @media (max-width: 900px) {
   .image-grid {
-    grid-template-columns: repeat(4, 1fr); /* 3 columns layout for smaller screens */
+    grid-template-columns: repeat(4, 1fr);
+    /* 3 columns layout for smaller screens */
   }
-  
+
   .image-grid iframe {
-    height: 140px; /* Adjust height for smaller screens */
+    height: 140px;
+    /* Adjust height for smaller screens */
     max-width: 80%;
   }
 }
 
 @media (max-width: 600px) {
   .image-grid {
-    grid-template-columns: repeat(1, 1fr);; /* 3 column layout for very small screens */
+    grid-template-columns: repeat(1, 1fr);
+    ;
+    /* 3 column layout for very small screens */
   }
 
   .image-grid iframe {
-    height: 150px; /* Further adjust height for mobile screens */
+    height: 150px;
+    /* Further adjust height for mobile screens */
     width: fit-content;
   }
 }
@@ -972,4 +986,28 @@ body {
     font-size: 14px;
     /* Adjust icon size for smaller screens */
   }
+}
+
+/* PROGRESS-BAR FUNCTIONALITY */
+.progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #b0b0b0;
+  z-index: 100;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: var(--first-color);
+  transition: width 0.1s ease-in-out;
+}
+
+.content {
+  padding: 20px;
+  margin-top: 10px;
+  height: 2000px; /* Adjust height to ensure scrolling */
 }
