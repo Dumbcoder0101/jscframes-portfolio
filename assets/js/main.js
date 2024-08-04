@@ -64,8 +64,51 @@ sr.reveal(".home__img, .about__subtitle, .about__text, .skills__img", {
 sr.reveal(".home__social-icon", { interval: 200 });
 sr.reveal(".skills__data, .work__img, .contact__input", { interval: 200 });
 
-// VIEW MORE BUTTON
+// VIEW MORE BUTTON with password
 
+// document.addEventListener("DOMContentLoaded", () => {
+//   const images = document.querySelectorAll(".image-grid iframe");
+//   const viewMoreBtn = document.getElementById("viewMoreBtn");
+//   let isShowingMore = false;
+
+//   // Initially show only the first 8 images
+//   images.forEach((image, index) => {
+//     if (index >= 8) {
+//       image.style.display = "none";
+//     }
+//   });
+
+//   viewMoreBtn.addEventListener("click", () => {
+//     if (isShowingMore) {
+//       // Hide extra images
+//       images.forEach((image, index) => {
+//         if (index >= 8) {
+//           image.style.display = "none";
+//         }
+//       });
+//       viewMoreBtn.textContent = "Show More";
+//     } else {
+//       // Ask for password to show more images
+//       const password = prompt("Enter password to view more images:");
+//       const correctPassword = "jscframes786110"; // Replace with your actual password
+
+//       if (password === correctPassword) {
+//         // Show all images if the password is correct
+//         images.forEach((image, index) => {
+//           if (index >= 8) {
+//             image.style.display = "block";
+//           }
+//         });
+//         viewMoreBtn.textContent = "Show Less";
+//       } else {
+//         alert("Incorrect password!");
+//       }
+//     }
+//     isShowingMore = !isShowingMore;
+//   });
+// });
+
+// VIEW MORE BUTTON without password
 document.addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll(".image-grid iframe");
   const viewMoreBtn = document.getElementById("viewMoreBtn");
@@ -88,25 +131,18 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       viewMoreBtn.textContent = "Show More";
     } else {
-      // Ask for password to show more images
-      const password = prompt("Enter password to view more images:");
-      const correctPassword = "jscframes786110"; // Replace with your actual password
-
-      if (password === correctPassword) {
-        // Show all images if the password is correct
-        images.forEach((image, index) => {
-          if (index >= 8) {
-            image.style.display = "block";
-          }
-        });
-        viewMoreBtn.textContent = "Show Less";
-      } else {
-        alert("Incorrect password!");
-      }
+      // Show all images
+      images.forEach((image, index) => {
+        if (index >= 8) {
+          image.style.display = "block";
+        }
+      });
+      viewMoreBtn.textContent = "Show Less";
     }
     isShowingMore = !isShowingMore;
   });
 });
+
 
 //Dropdown functionality
 document.addEventListener("DOMContentLoaded", function () {
