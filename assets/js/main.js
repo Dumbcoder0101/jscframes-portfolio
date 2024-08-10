@@ -71,9 +71,9 @@ sr.reveal(".skills__data, .work__img, .contact__input", { interval: 200 });
 //   const viewMoreBtn = document.getElementById("viewMoreBtn");
 //   let isShowingMore = false;
 
-//   // Initially show only the first 8 images
+//   // Initially show only the first 6 images
 //   images.forEach((image, index) => {
-//     if (index >= 8) {
+//     if (index >= 6) {
 //       image.style.display = "none";
 //     }
 //   });
@@ -82,7 +82,7 @@ sr.reveal(".skills__data, .work__img, .contact__input", { interval: 200 });
 //     if (isShowingMore) {
 //       // Hide extra images
 //       images.forEach((image, index) => {
-//         if (index >= 8) {
+//         if (index >= 6) {
 //           image.style.display = "none";
 //         }
 //       });
@@ -95,7 +95,7 @@ sr.reveal(".skills__data, .work__img, .contact__input", { interval: 200 });
 //       if (password === correctPassword) {
 //         // Show all images if the password is correct
 //         images.forEach((image, index) => {
-//           if (index >= 8) {
+//           if (index >= 6) {
 //             image.style.display = "block";
 //           }
 //         });
@@ -109,40 +109,37 @@ sr.reveal(".skills__data, .work__img, .contact__input", { interval: 200 });
 // });
 
 // VIEW MORE BUTTON without password
-document.addEventListener("DOMContentLoaded", () => {
-  const images = document.querySelectorAll(".image-grid iframe");
-  const viewMoreBtn = document.getElementById("viewMoreBtn");
-  let isShowingMore = false;
+// document.addEventListener("DOMContentLoaded", () => {
+//   const images = document.querySelectorAll(".image-grid iframe");
+//   const viewMoreBtn = document.getElementById("viewMoreBtn");
+//   let isShowingMore = false;
 
-  // Initially show only the first 8 images
-  images.forEach((image, index) => {
-    if (index >= 8) {
-      image.style.display = "none";
-    }
-  });
+//   // Initially show only the first 6 images
+//   images.forEach((image, index) => {
+//     if (index >= 6) {
+//       image.style.display = "none";
+//     }
+//   });
 
-  viewMoreBtn.addEventListener("click", () => {
-    if (isShowingMore) {
-      // Hide extra images
-      images.forEach((image, index) => {
-        if (index >= 8) {
-          image.style.display = "none";
-        }
-      });
-      viewMoreBtn.textContent = "Show More";
-    } else {
-      // Show all images
-      images.forEach((image, index) => {
-        if (index >= 8) {
-          image.style.display = "block";
-        }
-      });
-      viewMoreBtn.textContent = "Show Less";
-    }
-    isShowingMore = !isShowingMore;
-  });
-});
-
+//   viewMoreBtn.addEventListener("click", () => {
+//     if (isShowingMore) {
+//       // Hide extra images
+//       images.forEach((image, index) => {
+//         if (index >=6 ) {
+//           image.style.display = "none";
+//         }
+//       });
+//       viewMoreBtn.textContent = "View More";
+//     } else {
+//       // Show all images
+//       images.forEach((image) => {
+//         image.style.display = "block";
+//       });
+//       viewMoreBtn.textContent = "View Less";
+//     }
+//     isShowingMore = !isShowingMore;
+//   });
+// });
 
 //Dropdown functionality
 document.addEventListener("DOMContentLoaded", function () {
@@ -234,13 +231,36 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", function () {
   window.onscroll = function () {
     const progressBar = document.getElementById("progressBar");
-    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-    const clientHeight = document.documentElement.clientHeight || window.innerHeight;
+    const scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight =
+      document.documentElement.scrollHeight || document.body.scrollHeight;
+    const clientHeight =
+      document.documentElement.clientHeight || window.innerHeight;
     const scrollPercent = (scrollTop / (scrollHeight - clientHeight)) * 100;
 
-    console.log("scrollTop:", scrollTop, "scrollHeight:", scrollHeight, "clientHeight:", clientHeight, "scrollPercent:", scrollPercent);
+    console.log(
+      "scrollTop:",
+      scrollTop,
+      "scrollHeight:",
+      scrollHeight,
+      "clientHeight:",
+      clientHeight,
+      "scrollPercent:",
+      scrollPercent
+    );
 
     progressBar.style.width = scrollPercent + "%";
   };
+});
+
+// Highlight current category
+document.addEventListener("DOMContentLoaded", function () {
+  const categories = document.querySelectorAll(".category");
+  categories.forEach((category) => {
+    category.addEventListener("click", function () {
+      categories.forEach((c) => c.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
 });

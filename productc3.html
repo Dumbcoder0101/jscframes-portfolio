@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSC-Frames-Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, blue, #004d77);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+            cursor: none; /* Hide default cursor */
+        }
+        .container {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            z-index: 1;
+            color: #fff;
+        }
+        .header {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            animation: fadeIn 2s ease-out;
+        }
+        .description {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            animation: fadeIn 2s ease-out 0.5s;
+        }
+        .countdown {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            animation: fadeIn 2s ease-out 1s;
+        }
+        .footer {
+            font-size: 1rem;
+            margin-top: 2rem;
+            animation: fadeIn 2s ease-out 1.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .water-effect {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .water-effect::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        @keyframes waterRipple {
+            0% { transform: scale(0); opacity: 0.6; }
+            100% { transform: scale(3); opacity: 0; }
+        }
+        .cursor-effect {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: rgba(0, 150, 255, 0.6);
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            mix-blend-mode: screen;
+            box-shadow: 0 0 20px rgba(0, 150, 255, 0.6);
+            transition: transform 0.1s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">COMING SOON</div>
+        <div class="description">Our new photography collection is coming soon. Stay tuned for a glimpse into our latest work!</div>
+        <div class="countdown" id="countdown">Loading...</div>
+        <div class="footer">© 2024 JSC-Frames. All rights reserved.</div>
+    </div>
+    <div class="water-effect" id="water-effect"></div>
+    <div class="cursor-effect" id="cursor"></div>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const targetDate = new Date('2024-12-31T23:59:59'); // Set your target date here
+            const now = new Date();
+            const timeDifference = targetDate - now;
+
+            if (timeDifference <= 0) {
+                document.getElementById('countdown').innerText = 'We are live!';
+                return;
+            }
+
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown').innerText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Custom Cursor Effect
+        const cursor = document.getElementById('cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = `${e.pageX}px`;
+            cursor.style.top = `${e.pageY}px`;
+        });
+
+        // Water Ripple Effect
+        document.addEventListener('click', (e) => {
+            const waterEffect = document.getElementById('water-effect');
+            const ripple = document.createElement('div');
+            ripple.style.position = 'absolute';
+            ripple.style.left = `${e.pageX}px`;
+            ripple.style.top = `${e.pageY}px`;
+            ripple.style.width = '50px';
+            ripple.style.height = '50px';
+            ripple.style.background = 'rgba(255, 255, 255, 0.4)';
+            ripple.style.borderRadius = '50%';
+            ripple.style.pointerEvents = 'none';
+            ripple.style.transform = 'translate(-50%, -50%)';
+            ripple.style.animation = 'waterRipple 1s ease-out';
+            waterEffect.appendChild(ripple);
+            setTimeout(() => waterEffect.removeChild(ripple), 1000); // Remove ripple after animation
+        });
+    </script>
+</body>
+</html>
