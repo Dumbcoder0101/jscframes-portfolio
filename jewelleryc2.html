@@ -27,21 +27,24 @@
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item dropdown">
-                        <a href="work.html" class="nav__link dropdown-toggle" id="work-link">
+                        <a href="#work" class="nav__link dropdown-toggle" id="work-link">
                             Work <img src="assets/img/down-arrow.png" class="dropdown-icon" alt="Expand"
                                 id="dropdown-arrow">
                         </a>
                         <ul class="dropdown-menu" id="work-dropdown">
                             <li class="dropdown-item"><a href="eventc1.html" class="nav__link">Event photography</a>
                             </li>
-                            <li class="dropdown-item"><a href="eventc2.html" class="nav__link">Jewellery photography</a>
+                            <li class="dropdown-item"><a href="jewelleryc2.html" class="nav__link">Jewellery photography</a>
                             </li>
-                            <li class="dropdown-item"><a href="eventc3.html" class="nav__link">Graduation shoot</a></li>
-                            <li class="dropdown-item"><a href="eventc4.html" class="nav__link">Lifestyle/portraits</a>
-                            </li>
+                            <li class="dropdown-item"><a href="productc3.html" class="nav__link restricted">Product Photography</a></li>
+                            <li class="dropdown-item"><a href="productc3.html" class="nav__link restricted">Birthday Photography</a></li>
+                            <li class="dropdown-item"><a href="productc3.html" class="nav__link restricted">Wedding Photography</a></li>
+                            <li class="dropdown-item"><a href="productc3.html" class="nav__link restricted">Branding Photography</a></li>
+                            <li class="dropdown-item"><a href="productc3.html" class="nav__link restricted">Lifestyle &amp; Portraits</a></li>
+                            <li class="dropdown-item"><a href="productc3.html" class="nav__link restricted">Graduation Shoots</a></li>
                         </ul>
                     </li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
@@ -80,16 +83,27 @@
         </div>
         <!-- <button type="button" id="viewMoreBtn">View More</button> -->
     </section>
-    <section class="work section" id="work">
-        <h2 class="section-title">My Work</h2>
-        <div class="work-categories">
-            <a href="eventc1.html" class="category">
-                <img src="assets/img/thumbnail1.jpg" alt="Event-Photography">
-                <div class="category-title">Event Photography</div>
-            </a>
-            <a href="category3.html" class="category">
-                <img src="assets/img/thumbnail3.jpg" alt="Work-3">
-                <div class="category-title">Product Photography</div>
-                <div class="coming-soon">Coming Soon...</div>
-            </a>
-   
+
+    <!--===== WORK =====-->
+    <div id="work-container"></div>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">JSC-Frames-Portfolio</p>
+        <div class="footer__social">
+            <!-- <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a> -->
+            <!-- <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a> -->
+            <!-- <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a> -->
+        </div>
+        <p class="footer__copy">&#169; JSC-Frames.All Rights Reserved.</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

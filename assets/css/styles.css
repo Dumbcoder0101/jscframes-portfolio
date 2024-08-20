@@ -1110,7 +1110,7 @@ img {
   margin-top: 0.5rem;
 }
 
-.coming-soon {
+.private {
   position: absolute;
   top: 0.4rem;
   right: 0.6rem;
@@ -1138,7 +1138,7 @@ img {
     padding: 0.2rem 0.4rem;
   }
 
-  .coming-soon {
+  .private {
     font-size: 0.65rem;
     padding: 0.2rem 0.4rem;
   }
@@ -1159,7 +1159,7 @@ img {
     padding: 0.2rem 0.3rem;
   }
 
-  .coming-soon {
+  .private {
     font-size: 0.6rem;
     padding: 0.2rem 0.3rem;
   }
@@ -1180,7 +1180,7 @@ img {
     padding: 0.2rem 0.2rem;
   }
 
-  .coming-soon {
+  .private {
     font-size: 0.55rem;
     padding: 0.2rem 0.2rem;
   }
@@ -1201,7 +1201,7 @@ img {
     padding: 0rem 0.2rem;
   }
 
-  .coming-soon {
+  .private {
     font-size: 0.70rem;
     padding: 0.2rem;
   }
@@ -1222,7 +1222,7 @@ img {
     padding: 0.2rem;
   }
 
-  .coming-soon {
+  .private {
     font-size: 0.6rem;
     padding: 0.2rem;
   }

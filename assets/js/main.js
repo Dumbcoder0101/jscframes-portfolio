@@ -239,17 +239,6 @@ document.addEventListener("DOMContentLoaded", function () {
       document.documentElement.clientHeight || window.innerHeight;
     const scrollPercent = (scrollTop / (scrollHeight - clientHeight)) * 100;
 
-    console.log(
-      "scrollTop:",
-      scrollTop,
-      "scrollHeight:",
-      scrollHeight,
-      "clientHeight:",
-      clientHeight,
-      "scrollPercent:",
-      scrollPercent
-    );
-
     progressBar.style.width = scrollPercent + "%";
   };
 });
@@ -263,4 +252,49 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.add("active");
     });
   });
+});
+
+function setupRestrictedClickHandlers() {
+  // Select all elements with the 'restricted' class
+  const restrictedItems = document.querySelectorAll('.restricted');
+  console.log('Restricted items found:', restrictedItems.length);
+
+  restrictedItems.forEach(item => {
+    item.addEventListener('click', function (event) {
+      console.log('Clicked restricted item:', this);
+
+      event.preventDefault();  // Prevent the default link behavior
+      alert('Access Denied');  // Show an alert message
+    });
+  });
+}
+
+function loadTemplate() {
+  fetch('work-template.html')
+    .then(response => response.text())
+    .then(templateHtml => {
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = templateHtml.trim();
+
+      const template = tempDiv.querySelector('template');
+      const templateContent = template.content.cloneNode(true);
+
+      const insertionPoint = document.getElementById('work-container');
+      if (insertionPoint) {
+        insertionPoint.appendChild(templateContent);
+        
+        // Set up the click handlers for restricted items after loading the template
+        setupRestrictedClickHandlers();
+      } else {
+        console.error('Insertion point not found.');
+      }
+    })
+    .catch(error => console.error('Error loading template:', error));
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  loadTemplate();
+
+  // Also set up the click handlers for restricted items outside the template
+  setupRestrictedClickHandlers();
 });

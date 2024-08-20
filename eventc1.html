@@ -26,25 +26,27 @@
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item dropdown">
-                        <a href="work.html" class="nav__link dropdown-toggle" id="work-link">
+                        <a href="#work" class="nav__link dropdown-toggle" id="work-link">
                             Work <img src="assets/img/down-arrow.png" class="dropdown-icon" alt="Expand"
                                 id="dropdown-arrow">
                         </a>
                         <ul class="dropdown-menu" id="work-dropdown">
                             <li class="dropdown-item"><a href="eventc1.html" class="nav__link">Event photography</a>
                             </li>
-                            <li class="dropdown-item"><a href="jewelleryc2.html" class="nav__link">Jewellery
-                                    photography</a>
+                            <li class="dropdown-item"><a href="jewelleryc2.html" class="nav__link">Jewellery photography</a>
                             </li>
-                            <li class="dropdown-item"><a href="eventc3.html" class="nav__link">Graduation shoot</a></li>
-                            <li class="dropdown-item"><a href="eventc4.html" class="nav__link">Lifestyle/portraits</a>
-                            </li>
+                            <li class="dropdown-item"><a href="productc3.html" class="nav__link restricted">Product Photography</a></li>
+                            <li class="dropdown-item"><a href="productc3.html" class="nav__link restricted">Birthday Photography</a></li>
+                            <li class="dropdown-item"><a href="productc3.html" class="nav__link restricted">Wedding Photography</a></li>
+                            <li class="dropdown-item"><a href="productc3.html" class="nav__link restricted">Branding Photography</a></li>
+                            <li class="dropdown-item"><a href="productc3.html" class="nav__link restricted">Lifestyle &amp; Portraits</a></li>
+                            <li class="dropdown-item"><a href="productc3.html" class="nav__link restricted">Graduation Shoots</a></li>
                         </ul>
                     </li>
-                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
 
@@ -174,45 +176,10 @@
             </div>
             <!-- <button type="button" id="viewMoreBtn">View More</button> -->
         </section>
-        <section class="work section" id="work">
-            <h2 class="section-title">My Work</h2>
-            <div class="work-categories">
-                <a href="jewelleryc2.html" class="category">
-                    <img src="assets/img/thumbnail2.jpg" alt="Jewellery-Photography">
-                    <div class="category-title">Jewellery Photography</div>
-                </a>
-                <a href="category3.html" class="category">
-                    <img src="assets/img/thumbnail3.jpg" alt="Work-3">
-                    <div class="category-title">Product Photography</div>
-                    <div class="coming-soon">Coming Soon...</div>
-                </a>
-                <a href="category4.html" class="category">
-                    <img src="assets/img/thumbnail4.jpeg" alt="Work-4">
-                    <div class="category-title">Birthday Photography</div>
-                    <div class="coming-soon">Coming Soon...</div>
-                </a>
-                <a href="category5.html" class="category">
-                    <img src="assets/img/thumbnail5.jpg" alt="Work-5">
-                    <div class="category-title">Wedding Photography</div>
-                    <div class="coming-soon">Coming Soon...</div>
-                </a>
-                <a href="category6.html" class="category">
-                    <img src="assets/img/thumbnail6.jpg" alt="Work-6">
-                    <div class="category-title">Branding Photography</div>
-                    <div class="coming-soon">Coming Soon...</div>
-                </a>
-                <a href="category7.html" class="category">
-                    <img src="assets/img/thumbnail7.jpg" alt="Work-7">
-                    <div class="category-title">Lifestyle &amp; Portraits</div>
-                    <div class="coming-soon">Coming Soon...</div>
-                </a>
-                <a href="category8.html" class="category">
-                    <img src="assets/img/thumbnail8.jpg" alt="Work-8">
-                    <div class="category-title">Graduation Shoots</div>
-                    <div class="coming-soon">Coming Soon...</div>
-                </a>
-            </div>
-        </section>
+
+        <!--===== WORK =====-->
+        <div id="work-container"></div>
+
         <!-- back to top button  -->
         <button type="button" id="back-to-top" title="Go to top">
             <i class="fas fa-arrow-up"></i>
@@ -223,9 +190,9 @@
     <footer class="footer">
         <p class="footer__title">JSC-Frames-Portfolio</p>
         <div class="footer__social">
-            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+            <!-- <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a> -->
+            <!-- <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a> -->
+            <!-- <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a> -->
         </div>
         <p class="footer__copy">&#169; JSC-Frames.All Rights Reserved.</p>
     </footer>
