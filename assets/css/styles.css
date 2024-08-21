@@ -1216,35 +1216,3 @@ img {
   .category {
     max-width: 160vw;
   }
-
-  .category-title {
-    font-size: 1.3rem;
-    padding: 0rem 0.2rem;
-  }
-
-  .private {
-    font-size: 0.70rem;
-    padding: 0.2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .work-categories {
-    grid-template-columns: repeat(Center, minmax(100vw, 1fr));
-    justify-content: center;
-  }
-
-  .category {
-    max-width: 150vw;
-  }
-
-  .category-title {
-    font-size: 1.2rem;
-    padding: 0.2rem;
-  }
-
-  .private {
-    font-size: 0.6rem;
-    padding: 0.2rem;
-  }
-}
