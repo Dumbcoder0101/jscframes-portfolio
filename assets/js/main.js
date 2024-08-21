@@ -256,45 +256,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function setupRestrictedClickHandlers() {
   // Select all elements with the 'restricted' class
-  const restrictedItems = document.querySelectorAll('.restricted');
-  console.log('Restricted items found:', restrictedItems.length);
+  const restrictedItems = document.querySelectorAll(".restricted");
+  console.log("Restricted items found:", restrictedItems.length);
 
-  restrictedItems.forEach(item => {
-    item.addEventListener('click', function (event) {
-      console.log('Clicked restricted item:', this);
+  restrictedItems.forEach((item) => {
+    item.addEventListener("click", function (event) {
+      console.log("Clicked restricted item:", this);
 
-      event.preventDefault();  // Prevent the default link behavior
-      alert('Access Denied');  // Show an alert message
+      event.preventDefault(); // Prevent the default link behavior
+      alert("Category Not Available :("); // Show an alert message
     });
   });
 }
 
 function loadTemplate() {
-  fetch('work-template.html')
-    .then(response => response.text())
-    .then(templateHtml => {
-      const tempDiv = document.createElement('div');
+  fetch("work-template.html")
+    .then((response) => response.text())
+    .then((templateHtml) => {
+      const tempDiv = document.createElement("div");
       tempDiv.innerHTML = templateHtml.trim();
 
-      const template = tempDiv.querySelector('template');
+      const template = tempDiv.querySelector("template");
       const templateContent = template.content.cloneNode(true);
 
-      const insertionPoint = document.getElementById('work-container');
+      const insertionPoint = document.getElementById("work-container");
       if (insertionPoint) {
         insertionPoint.appendChild(templateContent);
-        
+
         // Set up the click handlers for restricted items after loading the template
         setupRestrictedClickHandlers();
       } else {
-        console.error('Insertion point not found.');
+        console.error("Insertion point not found.");
       }
     })
-    .catch(error => console.error('Error loading template:', error));
+    .catch((error) => console.error("Error loading template:", error));
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   loadTemplate();
 
   // Also set up the click handlers for restricted items outside the template
-  setupRestrictedClickHandlers();
-});
+  setupRestrictedClickHandlers

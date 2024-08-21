@@ -1080,15 +1080,12 @@ img {
   border-radius: 0.5rem;
   box-sizing: border-box;
   box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+  z-index: 2; /* Ensure the title stays on top */
 }
 
 .category:hover {
   transform: translateY(-1rem);
   border-color: #fff;
-}
-
-.category:hover img {
-  filter: brightness(40%);
 }
 
 .category:hover .category-title {
@@ -1121,6 +1118,30 @@ img {
   padding: 0.2rem 0.5rem;
   border-radius: 0.3rem;
   box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
+  z-index: 2; /* Ensure the title stays on top */
+}
+
+.category img.second-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show the second image on hover */
+.category:hover img.second-image {
+  opacity: 1;
+}
+
+/* Keep the first image visible, but it will be behind the second image */
+.category:hover img:first-child {
+  opacity: 1;
+}
+
+.category:hover .private {
+  filter:grayscale();
 }
 
 @media (max-width: 1200px) {
