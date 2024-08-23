@@ -296,4 +296,5 @@ document.addEventListener("DOMContentLoaded", function () {
   loadTemplate();
 
   // Also set up the click handlers for restricted items outside the template
-  setupRestrictedClickHandlers
+  setupRestrictedClickHandlers();
+});
